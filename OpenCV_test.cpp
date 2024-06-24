@@ -7,18 +7,25 @@
 int main()
 {
     cv::Mat img = cv::imread("C:\\Users\\johan\\OneDrive\\Pictures\\pildid\\IMG_20240624_182926.jpg", cv::IMREAD_COLOR);
-    cv::Mat bilateralImg, gaussianBlurImg, medianBlurImg;
+    cv::Mat bilateralImg, gaussianBlurImg, medianBlurImg, cannyImg, grayScaleImg;
 
-    double sigmaValue = 50.0;
+    double sigmaValue = 150.0;
 
-    cv::bilateralFilter(img, bilateralImg, 15, sigmaValue, sigmaValue);
-    cv::GaussianBlur(img, gaussianBlurImg, cv::Size(11, 11), 10);
-    cv::medianBlur(img, medianBlurImg, 11);
+    cv::bilateralFilter(img, bilateralImg, 7, sigmaValue, sigmaValue);
+    //cv::GaussianBlur(img, gaussianBlurImg, cv::Size(11, 11), 10);
+    //cv::medianBlur(img, medianBlurImg, 11);
+
+    // grayscale the image
+    cv::cvtColor(bilateralImg, grayScaleImg, cv::COLOR_BGR2GRAY);
+
+    // edge detection
+    cv::Canny(grayScaleImg, cannyImg, 50.0, 200.0);
 
     cv::imshow("Regular image", img);
     cv::imshow("Regular image with bilateral filtering", bilateralImg);
-    cv::imshow("Regular image with Gaussian blur", gaussianBlurImg);
-    cv::imshow("Regular image with median blur", medianBlurImg);
+    cv::imshow("Canny image", cannyImg);
+    //cv::imshow("Regular image with Gaussian blur", gaussianBlurImg);
+    //cv::imshow("Regular image with median blur", medianBlurImg);
 
     cv::waitKey(0);
     return 0;
