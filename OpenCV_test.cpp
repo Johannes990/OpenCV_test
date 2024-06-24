@@ -7,12 +7,21 @@
 int main()
 {
     cv::Mat img = cv::imread("C:\\Users\\johan\\OneDrive\\Pictures\\pildid\\IMG_20240624_182926.jpg", cv::IMREAD_COLOR);
+    cv::Mat bilateralImg, gaussianBlurImg, medianBlurImg;
 
-    cv::Mat bilateralImg;
+    double sigmaValue = 50.0;
 
-    cv::bilateralFilter(img, bilateralImg, 15, 20, 20);
+    cv::bilateralFilter(img, bilateralImg, 15, sigmaValue, sigmaValue);
+    cv::GaussianBlur(img, gaussianBlurImg, cv::Size(11, 11), 10);
+    cv::medianBlur(img, medianBlurImg, 11);
 
-    cv::imshow
+    cv::imshow("Regular image", img);
+    cv::imshow("Regular image with bilateral filtering", bilateralImg);
+    cv::imshow("Regular image with Gaussian blur", gaussianBlurImg);
+    cv::imshow("Regular image with median blur", medianBlurImg);
+
+    cv::waitKey(0);
+    return 0;
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
