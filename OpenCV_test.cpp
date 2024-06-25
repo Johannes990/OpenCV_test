@@ -7,7 +7,7 @@
 int main()
 {
     cv::Mat img = cv::imread("C:\\Users\\johan\\OneDrive\\Pictures\\pildid\\IMG_20240624_182926.jpg", cv::IMREAD_COLOR);
-    cv::Mat bilateralImg, gaussianBlurImg, medianBlurImg, cannyImg, grayScaleImg;
+    cv::Mat bilateralImg, gaussianBlurImg, medianBlurImg, cannyImg, grayScaleImg, dilateImg, erodeImg;
 
     double sigmaValue = 150.0;
 
@@ -21,9 +21,16 @@ int main()
     // edge detection
     cv::Canny(grayScaleImg, cannyImg, 50.0, 200.0);
 
+    // using dilate and erode on the source image
+    cv::Mat kernel = cv::getStructuringElement(cv::MORPH_ERODE, cv::Size(15, 15));
+    cv::dilate(img, dilateImg, kernel);
+    cv::erode(img, erodeImg, kernel);
+
     cv::imshow("Regular image", img);
-    cv::imshow("Regular image with bilateral filtering", bilateralImg);
+    //cv::imshow("Regular image with bilateral filtering", bilateralImg);
     cv::imshow("Canny image", cannyImg);
+    cv::imshow("Regular image with dilate", dilateImg);
+    cv::imshow("Regular image with erosion", erodeImg);
     //cv::imshow("Regular image with Gaussian blur", gaussianBlurImg);
     //cv::imshow("Regular image with median blur", medianBlurImg);
 
