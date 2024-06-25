@@ -26,7 +26,7 @@ int main() {
 	cv::imshow("Input", custom2);
 	cv::imshow("Kernel", kernel2);
 	cv::imshow("filter 2D", filter2D2);
-	cv::imshow("Gaussian", gaussian2);
+	cv::imshow("Gaussian", gaussian2); //
 
 	cv::waitKey(0);
 
