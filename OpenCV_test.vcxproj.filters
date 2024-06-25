@@ -18,5 +18,8 @@
     <ClCompile Include="OpenCV_test.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="conv_filter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

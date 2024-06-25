@@ -4,7 +4,7 @@
 #include <iostream>
 #include <opencv2\opencv.hpp>
 
-int main()
+int func()
 {
     cv::Mat img = cv::imread("C:\\Users\\johan\\OneDrive\\Pictures\\pildid\\IMG_20240624_182926.jpg", cv::IMREAD_COLOR);
     cv::Mat bilateralImg, gaussianBlurImg, medianBlurImg, cannyImg, grayScaleImg, dilateImg, erodeImg, laplacianImg, sobelImg;
@@ -40,6 +40,7 @@ int main()
         // Sobel operator result on our image
         cv::cvtColor(img, grayScaleImg, cv::COLOR_BGR2GRAY);
         cv::Sobel(grayScaleImg, sobelImg, CV_8UC1, dx, dy, sobelKernelSize, scaleFactor, delta);
+        cv::bilateralFilter(sobelImg, bilateralImg, 7, 150.0, 150.0);
 
         //cv::imshow("Regular image", img);
         //cv::imshow("Regular image with bilateral filtering", bilateralImg);
@@ -47,7 +48,7 @@ int main()
         //cv::imshow("Regular image with dilate", dilateImg);
         //cv::imshow("Regular image with erosion", erodeImg);
         //cv::imshow("Laplacian of regular image", laplacianImg);
-        cv::imshow("Sobel Output", sobelImg);
+        cv::imshow("Sobel Output", bilateralImg);
         //cv::imshow("Regular image with Gaussian blur", gaussianBlurImg);
         //cv::imshow("Regular image with median blur", medianBlurImg);
 
