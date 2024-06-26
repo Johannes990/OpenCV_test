@@ -6,12 +6,10 @@ void run_drawing_functions() {
 	cv::Mat maskImg = cv::Mat::zeros(cv::Size(1000, 1000), CV_8UC3);
 
 	cv::namedWindow("Mask", cv::WINDOW_NORMAL);
+
 	int point1 = 100;
 	int point2 = 150;
 	int thickness = 1;
-	// cv::LINE_AA - antialiased line, adds some smoothing to the boundary
-	
-
 	cv::createTrackbar("Trackbar 1", "Mask", &point1, 200);
 	cv::createTrackbar("Trackbar 2", "Mask", &point2, 200);
 
