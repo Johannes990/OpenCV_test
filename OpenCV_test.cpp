@@ -11,7 +11,8 @@ int main()
     //run_blur_filters();
     //run_conv_filters();
     //run_sobel_filter();
-    run_laplacian();
+    //run_laplacian();
+    run_drawing_functions();
 
     return 0;
 }
