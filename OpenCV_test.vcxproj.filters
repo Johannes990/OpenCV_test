@@ -18,8 +18,19 @@
     <ClCompile Include="OpenCV_test.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="conv_filter.cpp">
+    <ClCompile Include="conv_filter_2d.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="blur_methods.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="sobel_filter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="opencv_test.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

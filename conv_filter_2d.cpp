@@ -1,9 +1,10 @@
 #include <iostream>
 #include <opencv2\highgui.hpp>
 #include <opencv2\imgproc.hpp>
+#include "opencv_test.h"
 
 
-int main() {
+void run_conv_filters() {
 	cv::Mat custom = (cv::Mat_<float>(3, 3) << 1, 2, 50, 6, 8, 1, 0, 1, 2);
 	cv::Mat kernel = (cv::Mat_<float>(2, 2) << 1, 0, 7, 1);
 	cv::Mat gaussianKernel = (cv::Mat_<float>(3, 3) << 0.0625, 0.125, 0.0625, 0.125, 0.25, 0.125, 0.0625, 0.125, 0.0625); // 3x3 gaussian kernel
@@ -29,6 +30,4 @@ int main() {
 	cv::imshow("Gaussian", gaussian2); //
 
 	cv::waitKey(0);
-
-	return 0;
 }

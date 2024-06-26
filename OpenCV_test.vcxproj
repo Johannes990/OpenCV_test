@@ -143,8 +143,13 @@ xcopy /y /d "C:\Users\johan\opencv\build\x64\vc16\bin\opencv_world4100.dll" "$(O
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="conv_filter.cpp" />
+    <ClCompile Include="blur_methods.cpp" />
+    <ClCompile Include="conv_filter_2d.cpp" />
     <ClCompile Include="OpenCV_test.cpp" />
+    <ClCompile Include="sobel_filter.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="opencv_test.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
