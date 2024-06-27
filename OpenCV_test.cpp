@@ -14,7 +14,8 @@ int main()
     //run_laplacian();
     //run_drawing_methods_I();
     //run_drawing_methods_II();
-    run_image_contour_drawing();
+    //run_image_contour_drawing();
+    run_resize();
 
     return 0;
 }

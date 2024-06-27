@@ -8,3 +8,4 @@ void run_drawing_methods_I();		// some drawing methods for rectangles, lines, ci
 void run_drawing_methods_II();		// some more drawing methods for text, drawing and filling polylines
 void run_image_contour_drawing();	// takes an input of a vector of points and draws the contours of each vector 
 									// i.e draw polyline for each vector
+void run_resize();

@@ -39,6 +39,9 @@
     <ClCompile Include="drawing_image_contours.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="resize.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="opencv_test.h">
