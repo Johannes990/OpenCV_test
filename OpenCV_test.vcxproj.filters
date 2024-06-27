@@ -30,7 +30,10 @@
     <ClCompile Include="laplacian.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="drawing_methods.cpp">
+    <ClCompile Include="drawing_methods_I.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="drawing_methods_II.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

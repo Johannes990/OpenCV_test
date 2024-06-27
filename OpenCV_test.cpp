@@ -12,7 +12,8 @@ int main()
     //run_conv_filters();
     //run_sobel_filter();
     //run_laplacian();
-    run_drawing_functions();
+    //run_drawing_methods_I();
+    run_drawing_methods_II();
 
     return 0;
 }

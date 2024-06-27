@@ -3,7 +3,7 @@
 #include <vector>
 
 
-void run_drawing_functions() {
+void run_drawing_methods_I() {
 	cv::namedWindow("Mask", cv::WINDOW_KEEPRATIO);
 
 	int x = 100;

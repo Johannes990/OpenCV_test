@@ -145,7 +145,8 @@ xcopy /y /d "C:\Users\johan\opencv\build\x64\vc16\bin\opencv_world4100.dll" "$(O
   <ItemGroup>
     <ClCompile Include="blur_methods.cpp" />
     <ClCompile Include="conv_filter_2d.cpp" />
-    <ClCompile Include="drawing_methods.cpp" />
+    <ClCompile Include="drawing_methods_I.cpp" />
+    <ClCompile Include="drawing_methods_II.cpp" />
     <ClCompile Include="laplacian.cpp" />
     <ClCompile Include="OpenCV_test.cpp" />
     <ClCompile Include="sobel_filter.cpp" />
