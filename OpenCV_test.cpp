@@ -13,7 +13,8 @@ int main()
     //run_sobel_filter();
     //run_laplacian();
     //run_drawing_methods_I();
-    run_drawing_methods_II();
+    //run_drawing_methods_II();
+    run_image_contour_drawing();
 
     return 0;
 }
