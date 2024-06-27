@@ -12,3 +12,4 @@ void run_resize();					// rescale or resize an image to either a new given size,
 void run_warp_perspective();		// transform source image using a transformation matrix that is applied to each pixel
 void run_affine_transform();		// transform source image usign a transformation matrix that is applied to each pixel
 									// difference with warpPerspective is that the image is not crushed
+void run_rotation();		// rotations

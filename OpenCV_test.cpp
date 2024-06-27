@@ -17,7 +17,8 @@ int main()
     //run_image_contour_drawing();
     //run_resize();
     //run_warp_perspective();
-    run_affine_transform();
+    //run_affine_transform();
+    run_rotation();
 
     return 0;
 }
