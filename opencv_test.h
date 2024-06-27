@@ -10,3 +10,4 @@ void run_image_contour_drawing();	// takes an input of a vector of points and dr
 									// i.e draw polyline for each vector
 void run_resize();					// rescale or resize an image to either a new given size, or proportionally along axes
 void run_warp_perspective();
+void run_affine_transform();		// 

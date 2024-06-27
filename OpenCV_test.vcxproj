@@ -143,6 +143,7 @@ xcopy /y /d "C:\Users\johan\opencv\build\x64\vc16\bin\opencv_world4100.dll" "$(O
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="affine_transform.cpp" />
     <ClCompile Include="blur_methods.cpp" />
     <ClCompile Include="conv_filter_2d.cpp" />
     <ClCompile Include="drawing_image_contours.cpp" />
