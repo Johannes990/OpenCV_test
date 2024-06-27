@@ -4,6 +4,7 @@
 void run_affine_transform() {
 	// some animation :)
 	int count = 1;
+
 	while (count++) {
 		cv::Mat inputImg = cv::imread("C:\\Users\\johan\\OneDrive\\Pictures\\trashcan.jpg");
 		cv::Mat outputImg = cv::Mat::zeros(cv::Size(inputImg.cols, inputImg.rows), inputImg.type());
