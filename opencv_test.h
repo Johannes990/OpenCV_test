@@ -20,4 +20,4 @@ void run_remap();					// remap applies a generic geometrical transformation to a
 									// one for the x (idx m) axis and one for the y (idx n) axis. the final image is 
 									// then read sequentially from the x (at idx i) and y (at idx j) maps and the 
 									// value there inserted to the final image at position i, j. original (m, n) -> final (i, j)
-void run_polar_transformations();
+void run_polar_transformations();	// functions to transform an image between linear and polar coordinates
