@@ -18,7 +18,8 @@ int main()
     //run_resize();
     //run_warp_perspective();
     //run_affine_transform();
-    run_rotation();
+    //run_rotation();
+    data_types();
 
     return 0;
 }
