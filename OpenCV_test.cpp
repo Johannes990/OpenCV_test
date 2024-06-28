@@ -21,7 +21,8 @@ int main()
     //run_rotation();
     //data_types();
     //run_convert_maps();
-    run_remap();
+    //run_remap();
+    run_polar_transformations();
 
     return 0;
 }
