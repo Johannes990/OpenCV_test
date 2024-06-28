@@ -14,3 +14,4 @@ void run_affine_transform();		// transform source image usign a transformation m
 									// difference with warpPerspective is that the image is not crushed
 void run_rotation();				// rotations
 void data_types();
+void run_convert_maps();

@@ -54,6 +54,9 @@
     <ClCompile Include="data_types.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="convert_map.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="opencv_test.h">

@@ -19,7 +19,8 @@ int main()
     //run_warp_perspective();
     //run_affine_transform();
     //run_rotation();
-    data_types();
+    //data_types();
+    run_convert_maps();
 
     return 0;
 }
