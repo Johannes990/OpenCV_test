@@ -1,6 +1,6 @@
 #pragma once
 
-void run_blur_filters();			// somw different kind of noise smoothing filters - Median or bilinear are best to keep edges
+void run_blur_filters();			// some different kind of noise smoothing filters - Median or bilinear are best to keep edges
 void run_conv_filters();			// cnn kernel using 2d conv filter
 void run_sobel_filter();			// sobel operator
 void run_laplacian();				// laplacian operator
@@ -13,5 +13,10 @@ void run_warp_perspective();		// transform source image using a transformation m
 void run_affine_transform();		// transform source image usign a transformation matrix that is applied to each pixel
 									// difference with warpPerspective is that the image is not crushed
 void run_rotation();				// rotations
-void data_types();
-void run_convert_maps();
+void data_types();					// some differences between OpenCV built-in data types
+void run_convert_maps();			// convertMaps is a function that converts Matrices between data types. Example of use
+void run_remap();					// remap applies a generic geometrical transformation to an image.
+									// This actually means that we are mapping pixels from the original image into 2 maps:
+									// one for the x (idx m) axis and one for the y (idx n) axis. the final image is 
+									// then read sequentially from the x (at idx i) and y (at idx j) maps and the 
+									// value there inserted to the final image at position i, j. original (m, n) -> final (i, j)

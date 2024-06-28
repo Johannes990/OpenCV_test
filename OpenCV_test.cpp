@@ -20,7 +20,8 @@ int main()
     //run_affine_transform();
     //run_rotation();
     //data_types();
-    run_convert_maps();
+    //run_convert_maps();
+    run_remap();
 
     return 0;
 }

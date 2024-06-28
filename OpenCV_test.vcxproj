@@ -153,6 +153,7 @@ xcopy /y /d "C:\Users\johan\opencv\build\x64\vc16\bin\opencv_world4100.dll" "$(O
     <ClCompile Include="drawing_methods_II.cpp" />
     <ClCompile Include="laplacian.cpp" />
     <ClCompile Include="OpenCV_test.cpp" />
+    <ClCompile Include="remap.cpp" />
     <ClCompile Include="resize.cpp" />
     <ClCompile Include="rotation.cpp" />
     <ClCompile Include="sobel_filter.cpp" />
