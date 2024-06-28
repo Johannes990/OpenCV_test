@@ -21,3 +21,5 @@ void run_remap();					// remap applies a generic geometrical transformation to a
 									// then read sequentially from the x (at idx i) and y (at idx j) maps and the 
 									// value there inserted to the final image at position i, j. original (m, n) -> final (i, j)
 void run_polar_transformations();	// functions to transform an image between linear and polar coordinates
+void run_rectangle_sub_pixel();		// getRectSubPix gets a pixel rectangle from an image with sub-pixel accuracy
+									// meaning values between original pixels are filled with interpolated values
