@@ -23,7 +23,8 @@ int main()
     //run_convert_maps();
     //run_remap();
     //run_polar_transformations();
-    run_rectangle_sub_pixel();
+    //run_rectangle_sub_pixel();
+    run_threshold();
 
     return 0;
 }
