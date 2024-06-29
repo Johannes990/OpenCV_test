@@ -23,4 +23,5 @@ void run_remap();					// remap applies a generic geometrical transformation to a
 void run_polar_transformations();	// functions to transform an image between linear and polar coordinates
 void run_rectangle_sub_pixel();		// getRectSubPix gets a pixel rectangle from an image with sub-pixel accuracy
 									// meaning values between original pixels are filled with interpolated values
-void run_threshold();				// only pixels above threshold value are included in the output image (?)
+void run_threshold();				// only pixels above threshold value are included in the output image (other types available)
+void run_adaptive_threshold();		//

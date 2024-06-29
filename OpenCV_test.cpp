@@ -24,7 +24,8 @@ int main()
     //run_remap();
     //run_polar_transformations();
     //run_rectangle_sub_pixel();
-    run_threshold();
+    //run_threshold();
+    run_adaptive_threshold();
 
     return 0;
 }
