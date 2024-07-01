@@ -27,5 +27,6 @@ void run_distance_transform() {
 	//cv::imshow("distance transform image output", distanceTransformImg);
 	std::cout << distanceTransformImg << std::endl;
 	std::cout << labels << std::endl;
+
 	cv::waitKey(0);
 }
