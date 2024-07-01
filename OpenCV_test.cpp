@@ -25,7 +25,9 @@ int main()
     //run_polar_transformations();
     //run_rectangle_sub_pixel();
     //run_threshold();
-    run_adaptive_threshold();
+    //run_adaptive_threshold();
+    //run_integral();
+    run_distance_transform();
 
     return 0;
 }

@@ -24,4 +24,7 @@ void run_polar_transformations();	// functions to transform an image between lin
 void run_rectangle_sub_pixel();		// getRectSubPix gets a pixel rectangle from an image with sub-pixel accuracy
 									// meaning values between original pixels are filled with interpolated values
 void run_threshold();				// only pixels above threshold value are included in the output image (other types available)
-void run_adaptive_threshold();		//
+void run_adaptive_threshold();		// like threshold but takes into account kernels of pixels
+void run_integral();				// calculates the integral of an image from top left pixel to the given pixel. value is
+									// sum of the counted pixel values
+void run_distance_transform();

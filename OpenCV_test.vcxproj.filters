@@ -72,6 +72,12 @@
     <ClCompile Include="adaptive_threshold.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="integral.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="distance_transform.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="opencv_test.h">
