@@ -28,3 +28,4 @@ void run_adaptive_threshold();		// like threshold but takes into account kernels
 void run_integral();				// calculates the integral of an image from top left pixel to the given pixel. value is
 									// sum of the counted pixel values
 void run_distance_transform();		// calculates the distance to the closest zero pixel for each pixel of the source image
+void run_blend_linear();			// linear blending of two images
