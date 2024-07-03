@@ -29,3 +29,4 @@ void run_integral();				// calculates the integral of an image from top left pix
 									// sum of the counted pixel values
 void run_distance_transform();		// calculates the distance to the closest zero pixel for each pixel of the source image
 void run_blend_linear();			// linear blending of two images
+void run_grab_cut();				// image segmentation using the grab cut algorithm

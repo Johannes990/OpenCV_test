@@ -28,7 +28,8 @@ int main()
     //run_adaptive_threshold();
     //run_integral();
     //run_distance_transform();
-    run_blend_linear();
+    //run_blend_linear();
+    run_grab_cut();
 
     return 0;
 }
