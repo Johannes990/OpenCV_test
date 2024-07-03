@@ -29,7 +29,8 @@ int main()
     //run_integral();
     //run_distance_transform();
     //run_blend_linear();
-    run_grab_cut();
+    //run_grab_cut();
+    run_watershed();
 
     return 0;
 }

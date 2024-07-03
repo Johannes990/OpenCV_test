@@ -84,6 +84,9 @@
     <ClCompile Include="grab_cut.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="watershed.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="opencv_test.h">
