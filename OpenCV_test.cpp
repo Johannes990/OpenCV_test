@@ -30,7 +30,8 @@ int main()
     //run_distance_transform();
     //run_blend_linear();
     //run_grab_cut();
-    run_watershed();
+    //run_watershed();
+    run_flood_fill();
 
     return 0;
 }

@@ -154,6 +154,7 @@ xcopy /y /d "C:\Users\johan\opencv\build\x64\vc16\bin\opencv_world4100.dll" "$(O
     <ClCompile Include="drawing_image_contours.cpp" />
     <ClCompile Include="drawing_methods_I.cpp" />
     <ClCompile Include="drawing_methods_II.cpp" />
+    <ClCompile Include="flood_fill.cpp" />
     <ClCompile Include="grab_cut.cpp" />
     <ClCompile Include="integral.cpp" />
     <ClCompile Include="laplacian.cpp" />
