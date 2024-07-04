@@ -33,3 +33,5 @@ void run_grab_cut();				// image segmentation using the grab cut algorithm
 void run_watershed();				// image segmentation using the watershed algorithm
 void run_flood_fill();				// fills connected components of an image with given colors
 void run_cvt_color();				// converts an image from one color space into another
+void run_cvt_color_two_plane();		// cvtColorTwoPlane converts an image from one color space to another space where the
+									// source image is stored in two planes.

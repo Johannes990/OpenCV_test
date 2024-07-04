@@ -93,6 +93,9 @@
     <ClCompile Include="cvt_color.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="cvt_color_two_plane.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="opencv_test.h">

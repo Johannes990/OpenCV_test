@@ -32,7 +32,8 @@ int main()
     //run_grab_cut();
     //run_watershed();
     //run_flood_fill();
-    run_cvt_color();
+    //run_cvt_color();
+    run_cvt_color_two_plane();
 
     return 0;
 }
