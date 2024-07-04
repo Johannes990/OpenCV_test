@@ -90,6 +90,9 @@
     <ClCompile Include="flood_fill.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="cvt_color.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="opencv_test.h">

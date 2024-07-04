@@ -32,3 +32,4 @@ void run_blend_linear();			// linear blending of two images
 void run_grab_cut();				// image segmentation using the grab cut algorithm
 void run_watershed();				// image segmentation using the watershed algorithm
 void run_flood_fill();				// fills connected components of an image with given colors
+void run_cvt_color();				// converts an image from one color space into another

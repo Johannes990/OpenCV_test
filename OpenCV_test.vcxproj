@@ -149,6 +149,7 @@ xcopy /y /d "C:\Users\johan\opencv\build\x64\vc16\bin\opencv_world4100.dll" "$(O
     <ClCompile Include="blur_methods.cpp" />
     <ClCompile Include="convert_map.cpp" />
     <ClCompile Include="conv_filter_2d.cpp" />
+    <ClCompile Include="cvt_color.cpp" />
     <ClCompile Include="data_types.cpp" />
     <ClCompile Include="distance_transform.cpp" />
     <ClCompile Include="drawing_image_contours.cpp" />

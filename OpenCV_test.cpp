@@ -31,7 +31,8 @@ int main()
     //run_blend_linear();
     //run_grab_cut();
     //run_watershed();
-    run_flood_fill();
+    //run_flood_fill();
+    run_cvt_color();
 
     return 0;
 }
