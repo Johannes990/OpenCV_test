@@ -36,4 +36,5 @@ void run_cvt_color();				// converts an image from one color space into another
 void run_cvt_color_two_plane();		// cvtColorTwoPlane converts an image from one color space to another space where the
 									// source image is stored in two planes.
 void run_demosaicing();				// demosaicing() is the main function for all demosaicing processes
+void run_apply_color_map();			// apply a color map to some image
 
