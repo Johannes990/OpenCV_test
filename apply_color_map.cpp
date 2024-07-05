@@ -39,22 +39,22 @@ void run_apply_color_map() {
 
 	cv::hconcat(dst1, dst2, out1);
 	cv::hconcat(dst3, dst4, out2);
-	cv::hconcat(out1, out2, out3); //
+	cv::hconcat(out1, out2, out3);
 	cv::hconcat(dst5, dst6, out4);
 	cv::hconcat(dst7, dst8, out5);
-	cv::hconcat(out4, out5, out6); //
+	cv::hconcat(out4, out5, out6);
 	cv::hconcat(dst9, dst10, out7);
 	cv::hconcat(dst11, dst12, out8);
-	cv::hconcat(out7, out8, out9); //
+	cv::hconcat(out7, out8, out9);
 	cv::hconcat(dst13, dst14, out10);
 	cv::hconcat(dst15, dst16, out11);
-	cv::hconcat(out10 ,out11, out12); //
+	cv::hconcat(out10 ,out11, out12);
 	cv::hconcat(dst17, dst18, out13);
 	cv::hconcat(dst19, dst20, out14);
-	cv::hconcat(out13, out14, out15); //
+	cv::hconcat(out13, out14, out15);
 	cv::hconcat(dst21, dst22, out16);
 	cv::hconcat(dst23, dst24, out17);
-	cv::hconcat(out16, out17, out18); //
+	cv::hconcat(out16, out17, out18);
 
 	cv::vconcat(out3, out6, doubleRow1);
 	cv::vconcat(out9, out12, doubleRow2);
