@@ -33,7 +33,8 @@ int main()
     //run_watershed();
     //run_flood_fill();
     //run_cvt_color();
-    run_cvt_color_two_plane();
+    //run_cvt_color_two_plane();
+    run_demosaicing();
 
     return 0;
 }
