@@ -38,7 +38,8 @@ int main()
     //run_apply_color_map();
     //run_equalize_histogram();
     //run_calculate_histogram();
-    run_compare_histogram();
+    //run_compare_histogram();
+    run_calculate_back_project();
 
     return 0;
 }
