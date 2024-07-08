@@ -37,4 +37,4 @@ void run_cvt_color_two_plane();		// cvtColorTwoPlane converts an image from one 
 									// source image is stored in two planes.
 void run_demosaicing();				// demosaicing() is the main function for all demosaicing processes
 void run_apply_color_map();			// apply a color map to some image
-
+void run_equalize_histogram();

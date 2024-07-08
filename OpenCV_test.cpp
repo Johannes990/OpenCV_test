@@ -35,7 +35,8 @@ int main()
     //run_cvt_color();
     //run_cvt_color_two_plane();
     //run_demosaicing();
-    run_apply_color_map();
+    //run_apply_color_map();
+    run_equalize_histogram();
 
     return 0;
 }
