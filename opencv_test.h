@@ -40,4 +40,4 @@ void run_apply_color_map();			// apply a color map to some image
 void run_equalize_histogram();		// equalizes the histogram of pixel intensities of the image - increases the dynamic range
 void run_calculate_histogram();		// calculate and draw the histogram curve for our image
 void run_compare_histogram();		// compare different histograms by some distance functions (correlation, chi-square etc)
-void run_calculate_back_project();
+void run_calculate_back_project();	// calculates the back projection of an image - this is used for image segmentation somehow
