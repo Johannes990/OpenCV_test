@@ -37,7 +37,8 @@ int main()
     //run_demosaicing();
     //run_apply_color_map();
     //run_equalize_histogram();
-    run_calculate_histogram();
+    //run_calculate_histogram();
+    run_compare_histogram();
 
     return 0;
 }
