@@ -102,6 +102,12 @@
     <ClCompile Include="apply_color_map.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="equalize_histogram.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="calculate_histogram.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="opencv_test.h">

@@ -148,6 +148,7 @@ xcopy /y /d "C:\Users\johan\opencv\build\x64\vc16\bin\opencv_world4100.dll" "$(O
     <ClCompile Include="apply_color_map.cpp" />
     <ClCompile Include="blend_linear.cpp" />
     <ClCompile Include="blur_methods.cpp" />
+    <ClCompile Include="calculate_histogram.cpp" />
     <ClCompile Include="convert_map.cpp" />
     <ClCompile Include="conv_filter_2d.cpp" />
     <ClCompile Include="cvt_color.cpp" />
@@ -158,6 +159,7 @@ xcopy /y /d "C:\Users\johan\opencv\build\x64\vc16\bin\opencv_world4100.dll" "$(O
     <ClCompile Include="drawing_image_contours.cpp" />
     <ClCompile Include="drawing_methods_I.cpp" />
     <ClCompile Include="drawing_methods_II.cpp" />
+    <ClCompile Include="equalize_histogram.cpp" />
     <ClCompile Include="flood_fill.cpp" />
     <ClCompile Include="grab_cut.cpp" />
     <ClCompile Include="integral.cpp" />
