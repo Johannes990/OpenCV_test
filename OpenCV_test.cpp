@@ -39,7 +39,8 @@ int main()
     //run_equalize_histogram();
     //run_calculate_histogram();
     //run_compare_histogram();
-    run_calculate_back_project();
+    //run_calculate_back_project();
+    show_squares();
 
     return 0;
 }
