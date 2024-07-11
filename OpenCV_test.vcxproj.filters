@@ -117,6 +117,9 @@
     <ClCompile Include="_test_stuff.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="emd.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="opencv_test.h">

@@ -40,7 +40,8 @@ int main()
     //run_calculate_histogram();
     //run_compare_histogram();
     //run_calculate_back_project();
-    show_squares();
+    //show_squares();
+    run_emd();
 
     return 0;
 }

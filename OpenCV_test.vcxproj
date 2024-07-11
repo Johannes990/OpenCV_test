@@ -161,6 +161,7 @@ xcopy /y /d "C:\Users\johan\opencv\build\x64\vc16\bin\opencv_world4100.dll" "$(O
     <ClCompile Include="drawing_image_contours.cpp" />
     <ClCompile Include="drawing_methods_I.cpp" />
     <ClCompile Include="drawing_methods_II.cpp" />
+    <ClCompile Include="emd.cpp" />
     <ClCompile Include="equalize_histogram.cpp" />
     <ClCompile Include="flood_fill.cpp" />
     <ClCompile Include="grab_cut.cpp" />
@@ -176,6 +177,7 @@ xcopy /y /d "C:\Users\johan\opencv\build\x64\vc16\bin\opencv_world4100.dll" "$(O
     <ClCompile Include="threshold.cpp" />
     <ClCompile Include="warp_persepective.cpp" />
     <ClCompile Include="watershed.cpp" />
+    <ClCompile Include="_test_stuff.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="opencv_test.h" />

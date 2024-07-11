@@ -42,3 +42,6 @@ void run_calculate_histogram();		// calculate and draw the histogram curve for o
 void run_compare_histogram();		// compare different histograms by some distance functions (correlation, chi-square etc)
 void run_calculate_back_project();	// calculates the back projection of an image - this is used for image segmentation somehow
 void show_squares();				//// quick test to see if i can get corners from an image of a house
+void run_emd();						// Earth mover's distance - measures distance between 2 probability distributions over a region
+									// Also known as the Wasserstein metric in mathematics
+
