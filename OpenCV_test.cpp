@@ -41,7 +41,8 @@ int main()
     //run_compare_histogram();
     //run_calculate_back_project();
     //show_squares();
-    run_emd();
+    //run_emd();
+    run_clahe();
 
     return 0;
 }

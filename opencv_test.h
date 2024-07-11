@@ -44,4 +44,5 @@ void run_calculate_back_project();	// calculates the back projection of an image
 void show_squares();				//// quick test to see if i can get corners from an image of a house
 void run_emd();						// Earth mover's distance - measures distance between 2 probability distributions over a region
 									// Also known as the Wasserstein metric in mathematics
+void run_clahe();					// contrast limited adaptive histogram equalization
 
