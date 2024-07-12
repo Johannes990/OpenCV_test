@@ -4,13 +4,13 @@
 
 void run_find_contours() {
 	// findContours takes a single channel binary (non-zero pixel treated as 1) image as an input
-	cv::Mat input = cv::imread("C:\\Users\\johan\\OneDrive\\Pictures\\trashcan.jpg", cv::IMREAD_GRAYSCALE);
+	cv::Mat input = cv::imread("C:\\Users\\johan\\OneDrive\\Pictures\\random.jpg", cv::IMREAD_GRAYSCALE);
 	cv::Mat binaryImg;
 	cv::Mat contoursImg = cv::Mat::zeros(input.size(), CV_8UC3);
 	std::vector<std::vector<cv::Point>> contours;
 	std::vector<cv::Vec4i> hierarchy;
 	cv::Point offset;
-	const int mode = cv::RETR_EXTERNAL; // RETR_EXTERNAL - retrieves all the extreme outer contours for all contours
+	const int mode = cv::RETR_TREE;		// RETR_EXTERNAL - retrieves all the extreme outer contours for all contours
 										// RETR_LIST - retrieves all contours without hierarchy
 										// RETR_CCOMP - retrieves all contours and organizes them into a two-level hierarchy
 										// RETR_TREE - retrieves all contours and reconstructs a full hierarchy of nested contours
@@ -24,7 +24,15 @@ void run_find_contours() {
 
 	cv::findContours(binaryImg, contours, hierarchy, mode, method);
 
+	// print contour info to stdout
 	std::cout << "Found " << contours.size() << " contours." << std::endl;
+	for (cv::Vec4i k : hierarchy)
+		std::cout << k << std::endl;
+
+	// number all the contours
+	for (int i = 0; i < contours.size(); i++) {
+		cv::putText(contoursImg, std::to_string(i), contours[i][0], 1, 1, cv::Scalar(255, 255, 255), 1);
+	}
 
 	// -1 given as the contourIdx variable will draw all of the contours
 	cv::drawContours(contoursImg, contours, -1, cv::Scalar(0, 255, 255), 1);
