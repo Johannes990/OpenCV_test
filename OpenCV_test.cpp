@@ -42,7 +42,8 @@ int main()
     //run_calculate_back_project();
     //show_squares();
     //run_emd();
-    run_clahe();
+    //run_clahe();
+    run_find_contours();
 
     return 0;
 }

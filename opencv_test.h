@@ -45,4 +45,7 @@ void show_squares();				//// quick test to see if i can get corners from an imag
 void run_emd();						// Earth mover's distance - measures distance between 2 probability distributions over a region
 									// Also known as the Wasserstein metric in mathematics
 void run_clahe();					// contrast limited adaptive histogram equalization
+void run_find_contours();			// algorithm to retrieve contours from a binary image, very useful for shape analysis,
+									// object detection and recognition
+
 
