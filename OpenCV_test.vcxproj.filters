@@ -123,6 +123,9 @@
     <ClCompile Include="clahe.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="find_contours.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="opencv_test.h">
