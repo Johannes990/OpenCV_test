@@ -45,7 +45,8 @@ int main()
     //run_clahe();
     //run_find_contours();
     //run_bounding_rect();
-    run_min_area_rect();
+    //run_min_area_rect();
+    run_min_enclosing_circle();
 
     return 0;
 }
