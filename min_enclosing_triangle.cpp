@@ -15,6 +15,16 @@ void run_min_enclosing_triangle() {
 	cv::findContours(img, contours, cv::RETR_TREE, cv::CHAIN_APPROX_SIMPLE);
 	cv::drawContours(out, contours, -1, cv::Scalar(0, 150, 250), 1);
 
+	// draw the minimum bounding triangle for each contour
+	for (int i = 0; i < contours.size(); i++) {
+		std::vector<cv::Point> vertices;
+		cv::minEnclosingTriangle(contours[i], vertices);
+
+		cv::line(out, vertices[0], vertices[1], cv::Scalar(190, 170, 0), 1);
+		cv::line(out, vertices[1], vertices[2], cv::Scalar(190, 170, 0), 1);
+		cv::line(out, vertices[2], vertices[0], cv::Scalar(190, 170, 0), 1);
+	}
+
 	cv::imshow("In", img);
 	cv::imshow("Out", out);
 
