@@ -44,7 +44,8 @@ int main()
     //run_emd();
     //run_clahe();
     //run_find_contours();
-    run_bounding_rect();
+    //run_bounding_rect();
+    run_min_area_rect();
 
     return 0;
 }

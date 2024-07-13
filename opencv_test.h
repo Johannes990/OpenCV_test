@@ -48,4 +48,6 @@ void run_clahe();					// contrast limited adaptive histogram equalization
 void run_find_contours();			// algorithm to retrieve contours from a binary image, very useful for shape analysis,
 									// object detection and recognition
 void run_bounding_rect();			// get the bounding rectangle of some feature (contour)
+void run_min_area_rect();			// get the minimum aera rectangle for a set of points or contour (this rectangle can be rotated)
+
 
