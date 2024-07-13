@@ -43,7 +43,8 @@ int main()
     //show_squares();
     //run_emd();
     //run_clahe();
-    run_find_contours();
+    //run_find_contours();
+    run_bounding_rect();
 
     return 0;
 }
