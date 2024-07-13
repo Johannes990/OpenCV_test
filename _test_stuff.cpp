@@ -6,7 +6,7 @@ using namespace cv;
 using namespace std;
 
 int N = 7;
-int thresh = 100;
+int thresh = 200;
 
 // get angle between vectors pt0->pt1 and pt0->pt2
 static double calculateAngle(Point pt1, Point pt2, Point pt0) {
@@ -35,7 +35,7 @@ void find_squares(const Mat& image, vector<vector<Point>>& squares) {
 		// hack where we use Canny when lvl = 0
 		// Canny helps to catch squares with gradient shading
 		if (lvl == 0) {
-			Canny(gray0, gray, 0, thresh, 5); // upper threshold from slider
+			Canny(timg, gray, 0, thresh, 5); // upper threshold from slider
 			dilate(gray, gray, Mat(), Point(-1, -1)); // dilate to remove potential holes between edge segments
 		}
 		else {

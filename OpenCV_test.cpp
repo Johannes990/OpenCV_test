@@ -40,7 +40,7 @@ int main()
     //run_calculate_histogram();
     //run_compare_histogram();
     //run_calculate_back_project();
-    show_squares();
+    //show_squares();
     //run_emd();
     //run_clahe();
     //run_find_contours();
@@ -49,6 +49,7 @@ int main()
     //run_min_enclosing_circle();
     //run_min_enclosing_triangle();
     //run_contour_convex();
+    run_arc_length();
 
     return 0;
 }
