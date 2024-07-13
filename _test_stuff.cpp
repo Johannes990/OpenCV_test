@@ -57,8 +57,7 @@ void find_squares(const Mat& image, vector<vector<Point>>& squares) {
 
 				// square contours should have 4 vertices after approx
 				// relatively large area (to filter out noisy contours)
-				// and be convex
-				if (approx.size() == 4 && fabs(contourArea(approx)) > 1000 && isContourConvex(approx)) {
+				if (approx.size() == 4 && fabs(contourArea(approx)) > 1000) {
 					double maxCos = 0;
 					for (int j = 2; j < 5; j++) {
 						double cosine = fabs(calculateAngle(approx[j % 4], approx[j - 2], approx[j - 1]));
