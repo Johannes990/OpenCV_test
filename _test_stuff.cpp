@@ -23,8 +23,9 @@ void find_squares(const Mat& image, vector<vector<Point>>& squares) {
 	squares.clear();
 
 	Mat pyr, timg, gray0(image.size(), CV_8U), gray;
+	threshold(image, image, 120, 255, THRESH_BINARY);
 
-	// down-scale ant then up-scale to filter noise
+	// down-scale and then up-scale to filter noise
 	pyrDown(image, pyr, Size(image.cols / 2, image.rows / 2));
 	pyrUp(pyr, timg, image.size());
 	vector<vector<Point>> contours;
@@ -76,7 +77,7 @@ void find_squares(const Mat& image, vector<vector<Point>>& squares) {
 
 
 void show_squares() {
-	Mat img = imread("C:\\Users\\johan\\OneDrive\\Pictures\\pilt11.jpg", IMREAD_COLOR);
+	Mat img = imread("C:\\Users\\johan\\OneDrive\\Pictures\\pilt11.jpg", IMREAD_GRAYSCALE);
 	namedWindow("Lines", WINDOW_GUI_NORMAL);
 
 	vector<vector<Point>> squares;
