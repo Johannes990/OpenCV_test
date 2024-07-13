@@ -49,7 +49,8 @@ int main()
     //run_min_enclosing_circle();
     //run_min_enclosing_triangle();
     //run_contour_convex();
-    run_arc_length();
+    //run_arc_length();
+    run_approx_poly_dp();
 
     return 0;
 }

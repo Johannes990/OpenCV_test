@@ -53,6 +53,7 @@ void run_min_enclosing_circle();	// get the minimum area circle that encloses a 
 void run_min_enclosing_triangle();	// get the minimum area triangle around a contour
 void run_contour_convex();			// return wether some contour is convex or concave
 void run_arc_length();				// calculate a contour perimeter or arc length
+void run_approx_poly_dp();			// Approximate a polygonal curve with specified precision
 
 
 
