@@ -20,9 +20,11 @@ void run_approx_poly_dp() {
 	// print out vector space usage just for interest
 	size_t size = sizeof(contours[0][0]);
 	int totalCapacity = 0;
+
 	for (int i = 0; i < contours.size(); i++) {
 		totalCapacity += contours[i].capacity();
 	}
+
 	std::cout << "A single cv::Point uses " << size << " bytes of memory." << std::endl;
 	std::cout << "There are " << totalCapacity << " points in the contours vector" << std::endl;
 	std::cout << "Contours vector is using " << size * totalCapacity << " bytes of memory." << std::endl;
