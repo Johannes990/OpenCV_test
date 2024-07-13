@@ -47,7 +47,8 @@ int main()
     //run_bounding_rect();
     //run_min_area_rect();
     //run_min_enclosing_circle();
-    run_min_enclosing_triangle();
+    //run_min_enclosing_triangle();
+    run_contour_convex();
 
     return 0;
 }

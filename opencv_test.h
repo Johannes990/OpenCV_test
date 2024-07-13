@@ -51,5 +51,6 @@ void run_bounding_rect();			// get the bounding rectangle of some feature (conto
 void run_min_area_rect();			// get the minimum aera rectangle for a set of points or contour (this rectangle can be rotated)
 void run_min_enclosing_circle();	// get the minimum area circle that encloses a contour
 void run_min_enclosing_triangle();	// get the minimum area triangle around a contour
+void run_contour_convex();			// return wether some contour is convex or concave
 
 
