@@ -29,49 +29,48 @@ void find_squares(const Mat& image, vector<vector<Point>>& squares) {
 	pyrUp(pyr, timg, image.size());
 	vector<vector<Point>> contours;
 
-	// get squares from every color plane of the image
-	for (int c = 0; c < 3; c++) {
-		int ch[] = { c, 0 };
-		mixChannels(&timg, 1, &gray0, 1, ch, 1);
+	// try several threshold levels, here N = 7 for example
+	for (int lvl = 0; lvl < N; lvl++) {
+		// hack where we use Canny when lvl = 0
+		// Canny helps to catch squares with gradient shading
+		if (lvl == 0) {
+			Canny(gray0, gray, 0, thresh, 5); // upper threshold from slider
+			dilate(gray, gray, Mat(), Point(-1, -1)); // dilate to remove potential holes between edge segments
+		}
+		else {
+			gray = gray0 >= (lvl + 1) * 255 / N; // apply threshold
+		}
 
-		// try several threshold levels, here N = 11 for example
-		for (int lvl = 0; lvl < N; lvl++) {
-			// hack where we use Canny when lvl = 0
-			// Canny helps to catch squares with gradient shading
-			if (lvl == 0) {
-				Canny(gray0, gray, 0, thresh, 5); // upper threshold from slider
-				dilate(gray, gray, Mat(), Point(-1, -1)); // dilate to remove potential holes between edge segments
-			}
-			else {
-				gray = gray0 >= (lvl + 1) * 255 / N; // apply threshold
-			}
+		findContours(gray, contours, RETR_LIST, CHAIN_APPROX_SIMPLE);
 
-			findContours(gray, contours, RETR_LIST, CHAIN_APPROX_SIMPLE);
+		vector<Point> approx;
 
-			vector<Point> approx;
+		// test each contour
+		for (int i = 0; i < contours.size(); i++) {
+			// approx contour with acc proportional to contour perimeter (wut?)
+			approxPolyDP(contours[i], approx, arcLength(contours[i], true) * 0.02, true);
 
-			// test each contour
-			for (int i = 0; i < contours.size(); i++) {
-				// approx contour with acc proportional to contour perimeter (wut?)
-				approxPolyDP(contours[i], approx, arcLength(contours[i], true) * 0.02, true);
+			// square contours should have 4 vertices after approx and
+			// relatively large area (to filter out noisy contours)
+			if (approx.size() == 4 && fabs(contourArea(approx)) > 1000) {
+				double maxCos = 0;
+				for (int j = 2; j < 5; j++) {
+					double cosine = fabs(calculateAngle(approx[j % 4], approx[j - 2], approx[j - 1]));
+					maxCos = MAX(cosine, maxCos);
+				}
 
-				// square contours should have 4 vertices after approx
-				// relatively large area (to filter out noisy contours)
-				if (approx.size() == 4 && fabs(contourArea(approx)) > 1000) {
-					double maxCos = 0;
-					for (int j = 2; j < 5; j++) {
-						double cosine = fabs(calculateAngle(approx[j % 4], approx[j - 2], approx[j - 1]));
-						maxCos = MAX(cosine, maxCos);
-					}
-
-					// if cosine of all angles is small
-					// then add vertices to result
-					if (maxCos < 0.3) {
-						squares.push_back(approx);
-					}
+				// if cosine of all angles is small
+				// then add vertices to result
+				if (maxCos < 0.3) {
+					squares.push_back(approx);
 				}
 			}
 		}
+	}
+
+	cout << squares.size() << endl;
+	for (vector<Point> points : squares) {
+		cout << points << endl;
 	}
 }
 
