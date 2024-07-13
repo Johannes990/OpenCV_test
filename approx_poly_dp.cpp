@@ -17,6 +17,16 @@ void run_approx_poly_dp() {
 	cv::findContours(img, contours, hierarchy, cv::RETR_TREE, cv::CHAIN_APPROX_SIMPLE);
 	cv::drawContours(out, contours, -1, cv::Scalar(104, 154, 85), 1);
 
+	// print out vector space usage just for interest
+	size_t size = sizeof(contours[0][0]);
+	int totalCapacity = 0;
+	for (int i = 0; i < contours.size(); i++) {
+		totalCapacity += contours[i].capacity();
+	}
+	std::cout << "A single cv::Point uses " << size << " bytes of memory." << std::endl;
+	std::cout << "There are " << totalCapacity << " points in the contours vector" << std::endl;
+	std::cout << "Contours vector is using " << size * totalCapacity << " bytes of memory." << std::endl;
+
 	cv::Point2f center;
 	float radius;
 	double epsilon = 1.0; // the smaller this number is, the more precise the approximation
