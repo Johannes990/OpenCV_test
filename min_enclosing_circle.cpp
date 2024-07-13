@@ -12,11 +12,11 @@ void run_min_enclosing_circle() {
 	cv::findContours(img, contours, hierarchy, cv::RETR_TREE, cv::CHAIN_APPROX_SIMPLE);
 	cv::drawContours(out, contours, -2, cv::Scalar::all(255), 1);
 	
+	cv::Point2f center;
+	float radius;
+
 	// draw the minimum enclosing circle for each contour fooud
 	for (std::vector<cv::Point> contour : contours) {
-		cv::Point2f center;
-		float radius;
-
 		cv::minEnclosingCircle(contour, center, radius);
 		cv::circle(out, center, radius, cv::Scalar(0, 200, 255), 1);
 	}
