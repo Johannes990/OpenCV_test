@@ -18,7 +18,7 @@ void run_fit_line() {
 	
 	for (int i = 0; i < contours.size(); i++) {
 		int lineLength = 250;
-		cv::fitLine(contours[i], line, cv::DIST_L1, 0, 0.01, 0.01);
+		cv::fitLine(contours[i], line, cv::DIST_L2, 0, 0.01, 0.01);
 
 		cv::Point p1(line[0] * lineLength + line[2], line[1] * lineLength + line[3]);
 		cv::Point p2(-line[0] * lineLength + line[2], -line[1] * lineLength + line[3]);
