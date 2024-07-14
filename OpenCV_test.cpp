@@ -51,7 +51,8 @@ int main()
     //run_contour_convex();
     //run_arc_length();
     //run_approx_poly_dp();
-    run_convex_hull();
+    //run_convex_hull();
+    run_fit_line();
 
     return 0;
 }
