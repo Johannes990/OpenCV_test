@@ -147,6 +147,9 @@
     <ClCompile Include="approx_poly_dp.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="convex_hull.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="opencv_test.h">

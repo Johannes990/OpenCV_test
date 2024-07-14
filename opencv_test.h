@@ -54,6 +54,4 @@ void run_min_enclosing_triangle();	// get the minimum area triangle around a con
 void run_contour_convex();			// return wether some contour is convex or concave
 void run_arc_length();				// calculate a contour perimeter or arc length
 void run_approx_poly_dp();			// Approximate a polygonal curve with specified precision
-
-
-
+void run_convex_hull ();			//

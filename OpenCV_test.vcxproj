@@ -157,6 +157,7 @@ xcopy /y /d "C:\Users\johan\opencv\build\x64\vc16\bin\opencv_world4100.dll" "$(O
     <ClCompile Include="compare_histogram.cpp" />
     <ClCompile Include="contour_convex.cpp" />
     <ClCompile Include="convert_map.cpp" />
+    <ClCompile Include="convex_hull.cpp" />
     <ClCompile Include="conv_filter_2d.cpp" />
     <ClCompile Include="cvt_color.cpp" />
     <ClCompile Include="cvt_color_two_plane.cpp" />
