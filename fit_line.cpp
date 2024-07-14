@@ -26,10 +26,8 @@ void run_fit_line() {
 		cv::line(out, p1, p2, cv::Scalar(90, 120, i * 23), 1);
 	}
 	
-
 	cv::imshow("In", img);
 	cv::imshow("Out", out);
 
 	cv::waitKey(0);
-
 }
