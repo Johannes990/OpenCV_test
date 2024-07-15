@@ -2,6 +2,32 @@
 #include "opencv_test.h"
 
 
+void draw_rotated_rectangle(cv::Mat& img, cv::RotatedRect rotatedRect, cv::Scalar& color, int thickness) {
+	cv::Mat rectPoints;
+
+	cv::boxPoints(rotatedRect, rectPoints);
+
+	float p1_x = rectPoints.at<float>(cv::Point(0, 0));
+	float p1_y = rectPoints.at<float>(cv::Point(1, 0));
+	float p2_x = rectPoints.at<float>(cv::Point(0, 1));
+	float p2_y = rectPoints.at<float>(cv::Point(1, 1));
+	float p3_x = rectPoints.at<float>(cv::Point(0, 2));
+	float p3_y = rectPoints.at<float>(cv::Point(1, 2));
+	float p4_x = rectPoints.at<float>(cv::Point(0, 3));
+	float p4_y = rectPoints.at<float>(cv::Point(1, 3));
+
+	cv::Point p1 = cv::Point(p1_x, p1_y);
+	cv::Point p2 = cv::Point(p2_x, p2_y);
+	cv::Point p3 = cv::Point(p3_x, p3_y);
+	cv::Point p4 = cv::Point(p4_x, p4_y);
+
+	cv::line(img, p1, p2, color, thickness);
+	cv::line(img, p2, p3, color, thickness);
+	cv::line(img, p3, p4, color, thickness);
+	cv::line(img, p4, p1, color, thickness);
+}
+
+
 void run_rotated_rect_intersect() {
 	cv::Mat base = cv::Mat::zeros(cv::Size(1000, 800), CV_8UC3);
 	cv::Scalar rectColor = cv::Scalar(83, 59, 199);
@@ -22,6 +48,8 @@ void run_rotated_rect_intersect() {
 	cv::RotatedRect r2(r2_center, r2_size, r2_angle);
 	cv::RotatedRect r3(r3_center, r3_size, r3_angle);
 	cv::RotatedRect r4(r4_center, r4_size, r4_angle);
+
+	
 
 	cv::namedWindow("Base picture", cv::WINDOW_GUI_NORMAL);
 
