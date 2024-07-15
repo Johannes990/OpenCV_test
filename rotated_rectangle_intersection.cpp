@@ -31,6 +31,7 @@ void draw_rotated_rectangle(cv::Mat& img, cv::RotatedRect rotatedRect, cv::Scala
 void run_rotated_rect_intersect() {
 	cv::Mat base = cv::Mat::zeros(cv::Size(1000, 800), CV_8UC3);
 	cv::Scalar rectColor = cv::Scalar(83, 59, 199);
+	int rectThickness = 1;
 	cv::Point2f r1_center = cv::Point2f(300, 300);
 	cv::Size r1_size = cv::Size(100, 100);
 	float r1_angle = 0.0;
@@ -41,7 +42,7 @@ void run_rotated_rect_intersect() {
 	cv::Size r3_size = cv::Size(250, 250);
 	float r3_angle = 45.0;
 	cv::Point2f r4_center = cv::Point2f(500, 700);
-	cv::Size r4_size = cv::Size(400, 400);
+	cv::Size r4_size = cv::Size(650, 400);
 	float r4_angle = 110.0;
 	
 	cv::RotatedRect r1(r1_center, r1_size, r1_angle);
@@ -49,7 +50,10 @@ void run_rotated_rect_intersect() {
 	cv::RotatedRect r3(r3_center, r3_size, r3_angle);
 	cv::RotatedRect r4(r4_center, r4_size, r4_angle);
 
-	
+	draw_rotated_rectangle(base, r1, rectColor, rectThickness);
+	draw_rotated_rectangle(base, r2, rectColor, rectThickness);
+	draw_rotated_rectangle(base, r3, rectColor, rectThickness);
+	draw_rotated_rectangle(base, r4, rectColor, rectThickness);
 
 	cv::namedWindow("Base picture", cv::WINDOW_GUI_NORMAL);
 
