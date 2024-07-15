@@ -28,7 +28,7 @@ void draw_rotated_rectangle(cv::Mat& img, cv::RotatedRect rotatedRect, cv::Scala
 }
 
 
-void draw_vector_points_as_circles(cv::Mat& img, std::vector<cv::Point2f> points, cv::Scalar& color, int radius, int thickness) {
+void draw_vector_points_as_circles(cv::Mat& img, std::vector<cv::Point> points, cv::Scalar& color, int radius, int thickness) {
 	for (int i = 0; i < points.size(); i++) {
 		cv::circle(img, points[i], radius, color, thickness);
 	}
@@ -39,11 +39,14 @@ void run_rotated_rect_intersect() {
 	cv::Mat base = cv::Mat::zeros(cv::Size(1000, 800), CV_8UC3);
 	cv::Scalar rectColor = cv::Scalar(83, 59, 199);
 	int rectThickness = 2;
-	std::vector<cv::Point2f> intersection1Points;
-	std::vector<cv::Point2f> intersection2Points;
+	std::vector<cv::Point> intersection1Points;
+	std::vector<cv::Point> intersection2Points;
 	int circleRadius = 5;
 	int circleThickness = 2;
-	cv::Scalar circleColor = cv::Scalar(0, 189, 170);
+	cv::Scalar circleColor = cv::Scalar(0, 229, 255);
+	std::vector<std::vector<cv::Point>> polyPoints1;
+	std::vector<std::vector<cv::Point>> polyPoints2;
+	cv::Scalar polyFillColor = cv::Scalar(200, 200, 0);
 	cv::Point2f r1_center = cv::Point2f(300, 300);
 	cv::Size r1_size = cv::Size(100, 100);
 	float r1_angle = 0.0;
@@ -70,6 +73,14 @@ void run_rotated_rect_intersect() {
 	cv::rotatedRectangleIntersection(r1, r2, intersection1Points);
 	cv::rotatedRectangleIntersection(r3, r4, intersection2Points);
 
+	std::cout << "Working so far" << std::endl;
+	polyPoints1.push_back(intersection1Points);
+	polyPoints2.push_back(intersection2Points);
+
+	cv::fillPoly(base, polyPoints1, polyFillColor);
+	cv::fillPoly(base, polyPoints2, polyFillColor);
+
+	std::cout << "Working so far" << std::endl;
 	draw_vector_points_as_circles(base, intersection1Points, circleColor, circleRadius, circleThickness);
 	draw_vector_points_as_circles(base, intersection2Points, circleColor, circleRadius, circleThickness);
 
