@@ -53,7 +53,8 @@ int main()
     //run_approx_poly_dp();
     //run_convex_hull();
     //run_fit_line();
-    run_rotated_rect_intersect();
+    //run_rotated_rect_intersect();
+    run_connected_components();
 
     return 0;
 }
