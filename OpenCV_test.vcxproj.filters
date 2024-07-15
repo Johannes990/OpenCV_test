@@ -153,6 +153,9 @@
     <ClCompile Include="fit_line.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="rotated_rectangle_intersection.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="opencv_test.h">

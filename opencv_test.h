@@ -56,3 +56,4 @@ void run_arc_length();				// calculate a contour perimeter or arc length
 void run_approx_poly_dp();			// Approximate a polygonal curve with specified precision
 void run_convex_hull ();			// creates a set of points (convex hull) that surround a given set oh points
 void run_fit_line();				// line fitting to a given point set (linear regression)
+void run_rotated_rect_intersect();	//
