@@ -73,14 +73,12 @@ void run_rotated_rect_intersect() {
 	cv::rotatedRectangleIntersection(r1, r2, intersection1Points);
 	cv::rotatedRectangleIntersection(r3, r4, intersection2Points);
 
-	std::cout << "Working so far" << std::endl;
 	polyPoints1.push_back(intersection1Points);
 	polyPoints2.push_back(intersection2Points);
 
 	cv::fillPoly(base, polyPoints1, polyFillColor);
 	cv::fillPoly(base, polyPoints2, polyFillColor);
 
-	std::cout << "Working so far" << std::endl;
 	draw_vector_points_as_circles(base, intersection1Points, circleColor, circleRadius, circleThickness);
 	draw_vector_points_as_circles(base, intersection2Points, circleColor, circleRadius, circleThickness);
 
