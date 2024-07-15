@@ -58,3 +58,5 @@ void run_convex_hull ();			// creates a set of points (convex hull) that surroun
 void run_fit_line();				// line fitting to a given point set (linear regression)
 void run_rotated_rect_intersect();	// find if there is any intersection between 2 rotated rectangles
 void run_connected_components();	// computes the connected components labeled image of bool image
+void run_intersect_convex_convex();	// finds intersection of two convex polygons, returns area of intersection
+									// if intersection exists

@@ -159,6 +159,9 @@
     <ClCompile Include="connected_components.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="intersection_convex_convex.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="opencv_test.h">
