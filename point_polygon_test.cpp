@@ -10,13 +10,17 @@ void run_point_polygon_test() {
 	cv::rectangle(img, cv::Point(100, 100), cv::Point(300, 300), cv::Scalar(200, 200, 30), 2);
 	cv::findContours(img, contours, hierarchy, cv::RETR_EXTERNAL, cv::CHAIN_APPROX_SIMPLE);
 
-	double outsideContour = cv::pointPolygonTest(contours[0], cv::Point(90, 110), false);
-	double onContour = cv::pointPolygonTest(contours[0], cv::Point(100, 110), false);
-	double insideContour = cv::pointPolygonTest(contours[0], cv::Point(110, 110), false);
+	cv::Point p1 = cv::Point(90, 110);
+	cv::Point p2 = cv::Point(101, 110);
+	cv::Point p3 = cv::Point(110, 110);
 
-	std::cout << "Return value for point (90, 110): " << outsideContour << std::endl;
-	std::cout << "Return value for point (100, 110): " << onContour << std::endl;
-	std::cout << "Return value for point (110, 110): " << insideContour << std::endl;
+	double outsideContour = cv::pointPolygonTest(contours[0], p1, false);
+	double onContour = cv::pointPolygonTest(contours[0], p2, false);
+	double insideContour = cv::pointPolygonTest(contours[0], p3, false);
+
+	std::cout << "Return value for point (" << p1.x << ", " << p1.y << "): " << outsideContour << std::endl;
+	std::cout << "Return value for point (" << p2.x << ", " << p2.y << "): " << onContour << std::endl;
+	std::cout << "Return value for point (" << p3.x << ", " << p3.y << "): " << insideContour << std::endl;
 
 	cv::namedWindow("picture", cv::WINDOW_GUI_NORMAL);
 
