@@ -59,7 +59,8 @@ int main()
     //run_contour_area();
     //run_point_polygon_test();
     //run_moments();
-    run_hu_moments();
+    //run_hu_moments();
+    run_match_shapes();
 
     return 0;
 }

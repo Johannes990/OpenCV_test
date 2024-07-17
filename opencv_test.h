@@ -65,3 +65,5 @@ void run_point_polygon_test();		// pointPolygonTest checks wether a point is ins
 									// lies on the edge (zero) or is outside it (negative)
 void run_moments();					// calculates all moments up to the third order of a polygon / rasterized shape
 void run_hu_moments();				// huMoments() function calculates 7 Hu invariants
+void run_match_shapes();			// matchShapes() compares two contours and returns a value between 0 (similar) 
+									// and 1 (dissimilar)
