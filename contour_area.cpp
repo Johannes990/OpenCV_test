@@ -14,6 +14,12 @@ void run_contour_area() {
 	cv::findContours(img, contours, hierarchy, cv::RETR_EXTERNAL, cv::CHAIN_APPROX_SIMPLE);
 	cv::drawContours(out, contours, -1, contourColor, 1);
 
+	// calculate the area of each contour and write to stdout
+	for (int i = 0; i < contours.size(); i++) {
+		area = cv::contourArea(contours[i]);
+		std::cout << "Contour " << i << " has area: " << area << std::endl;
+	}
+
 	cv::namedWindow("In", cv::WINDOW_GUI_NORMAL);
 	cv::namedWindow("Out", cv::WINDOW_GUI_NORMAL);
 
