@@ -162,6 +162,9 @@
     <ClCompile Include="intersection_convex_convex.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="contour_area.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="opencv_test.h">

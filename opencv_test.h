@@ -60,3 +60,4 @@ void run_rotated_rect_intersect();	// find if there is any intersection between 
 void run_connected_components();	// computes the connected components labeled image of bool image
 void run_intersect_convex_convex();	// finds intersection of two convex polygons, returns area of intersection
 									// if intersection exists
+void run_contour_area();			// calculate the area of some contour

@@ -55,7 +55,8 @@ int main()
     //run_fit_line();
     //run_rotated_rect_intersect();
     //run_connected_components();
-    run_intersect_convex_convex();
+    //run_intersect_convex_convex();
+    run_contour_area();
 
     return 0;
 }
