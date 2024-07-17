@@ -67,3 +67,4 @@ void run_moments();					// calculates all moments up to the third order of a pol
 void run_hu_moments();				// huMoments() function calculates 7 Hu invariants
 void run_match_shapes();			// matchShapes() compares two contours and returns a value between 0 (similar) 
 									// and 1 (dissimilar)
+void run_canny();					// the canny edge detection algorithm

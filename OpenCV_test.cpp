@@ -60,7 +60,8 @@ int main()
     //run_point_polygon_test();
     //run_moments();
     //run_hu_moments();
-    run_match_shapes();
+    //run_match_shapes();
+    run_canny();
 
     return 0;
 }
