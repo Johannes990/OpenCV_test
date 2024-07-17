@@ -20,10 +20,20 @@ void run_hu_moments() {
 
 	std::vector<cv::Moments> M(contours.size());
 	for (int i = 0; i < contours.size(); i++) {
+		std::cout << "Contour " << i << std::endl;
+		double huMoments[7];
+
 		M[i] = cv::moments(contours[i]);
+		cv::HuMoments(M[i], huMoments);
+
 		cv::Point massCenter(M[i].m10 / M[i].m00, M[i].m01 / M[i].m00);
 
 		cv::circle(out, massCenter, massCenterRadius, massCenterColor, cv::FILLED);
+		cv::putText(out, std::to_string(i), massCenter, 1, 1, cv::Scalar::all(100));
+		
+		for (int hm = 0; hm < 7; hm++) {
+			std::cout << "\tHu moment #" << hm << ": " << huMoments[hm] << std::endl;
+		}
 	}
 
 	cv::imshow("In", img);
