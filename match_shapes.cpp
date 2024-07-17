@@ -13,7 +13,6 @@ void run_match_shapes() {
 	std::vector<cv::Vec4i> lettersHierarchy;
 	std::vector<cv::Vec4i> rHierarchy;
 	std::vector<cv::Vec4i> wHierarchy;
-	
 	cv::Scalar contourColor = cv::Scalar(45, 50, 255);
 
 	cv::namedWindow("In", cv::WINDOW_GUI_NORMAL);
