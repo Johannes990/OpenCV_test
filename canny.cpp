@@ -8,10 +8,10 @@ void run_canny() {
 	cv::Mat out2;
 	double threshold1 = 80.0;	// anecdotal evidence suggests to use
 	double threshold2 = 240.0;	// as threshold2 value 3x threshold1 value, like here
-	double threshold3 = 900.0;
+	double threshold3 = 150.0;
 
-	cv::Canny(img, out, threshold1, threshold2);
-	cv::Canny(img, out2, 300, threshold3);
+	cv::Canny(img, out, threshold1, threshold2, 3, false);	// aperture size should be 3 most of the time
+	cv::Canny(img, out2, threshold1, threshold2, 3, true);	// L2 gradient can be set to true for some extra accuracy
 
 	cv::namedWindow("In", cv::WINDOW_GUI_NORMAL);
 	cv::namedWindow("Out", cv::WINDOW_GUI_NORMAL);
