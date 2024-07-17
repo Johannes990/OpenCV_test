@@ -57,7 +57,8 @@ int main()
     //run_connected_components();
     //run_intersect_convex_convex();
     //run_contour_area();
-    run_point_polygon_test();
+    //run_point_polygon_test();
+    run_moments();
 
     return 0;
 }

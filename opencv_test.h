@@ -63,3 +63,4 @@ void run_intersect_convex_convex();	// finds intersection of two convex polygons
 void run_contour_area();			// calculate the area of some contour
 void run_point_polygon_test();		// pointPolygonTest checks wether a point is inside a polygon (positive),
 									// lies on the edge (zero) or is outside it (negative)
+void run_moments();					// calculates all moments up to the third order of a polygon / rasterized shape
