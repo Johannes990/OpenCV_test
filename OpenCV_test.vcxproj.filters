@@ -165,6 +165,9 @@
     <ClCompile Include="contour_area.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="point_polygon_test.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="opencv_test.h">

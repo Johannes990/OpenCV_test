@@ -61,3 +61,5 @@ void run_connected_components();	// computes the connected components labeled im
 void run_intersect_convex_convex();	// finds intersection of two convex polygons, returns area of intersection
 									// if intersection exists
 void run_contour_area();			// calculate the area of some contour
+void run_point_polygon_test();		// pointPolygonTest checks wether a point is inside a polygon (positive),
+									// lies on the edge (zero) or is outside it (negative)
