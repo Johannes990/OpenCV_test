@@ -3,7 +3,7 @@
 
 
 void run_corner_eigen_val_vect() {
-	cv::Mat img = cv::imread("C:\\Users\\johan\\OneDrive\\Pictures\\paneelmaja.jpg", cv::IMREAD_COLOR);
+	cv::Mat img = cv::imread("C:\\Users\\johan\\OneDrive\\Pictures\\trashcan.jpg", cv::IMREAD_COLOR);
 	cv::Mat imgGray;
 	cv::Mat cornerMinEigenVal;
 	cv::Mat cornerEigenValsAndVecs;	// this Mat will hold 6 values for every point - not sure how to use this
