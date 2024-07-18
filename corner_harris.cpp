@@ -5,9 +5,8 @@
 void run_corner_harris() {
 	cv::Mat img = cv::imread("C:\\Users\\johan\\OneDrive\\Pictures\\paneelmaja.jpg", cv::IMREAD_COLOR);
 	cv::Mat imgGray, harris;
-	cv::Mat corners = cv::Mat::zeros(img.size(), CV_8UC3);
 	cv::Mat out = cv::Mat::zeros(img.size(), CV_8UC3);
-	const int blockSize = 7;	// neighborhood size
+	const int blockSize = 2;	// neighborhood size
 	const int kSize = 5;		// aperture parameter for the Sobel operator
 	const double k = 0.005;		// Harris detector free parameter
 	const int borderType = cv::BORDER_DEFAULT;
@@ -29,14 +28,12 @@ void run_corner_harris() {
 			// some random small number here to check, not known prior to running
 			// so this is some heuristic variable, should be found out somehow at runtime?
 			if (harris.at<float>(cv::Point(i, j)) > 0.002) {
-				corners.at<cv::Vec3b>(cv::Point(i, j)) = cv::Vec3b(50, 50, 255);
 				out.at<cv::Vec3b>(cv::Point(i, j)) = cv::Vec3b(50, 50, 255);
 			}
 		}
 	}
 
 	cv::imshow("In", img);
-	cv::imshow("Corners", corners);
 	cv::imshow("Gray corners", out);
 
 	cv::waitKey(0);
