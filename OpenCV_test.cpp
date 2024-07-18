@@ -61,7 +61,8 @@ int main()
     //run_moments();
     //run_hu_moments();
     //run_match_shapes();
-    run_canny();
+    //run_canny();
+    run_corner_harris();
 
     return 0;
 }
