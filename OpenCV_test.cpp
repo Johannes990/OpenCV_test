@@ -62,7 +62,9 @@ int main()
     //run_hu_moments();
     //run_match_shapes();
     //run_canny();
-    run_corner_harris();
+    //run_corner_harris();
+    run_corner_eigen_val_vect();
+
 
     return 0;
 }

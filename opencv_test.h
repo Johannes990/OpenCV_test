@@ -69,3 +69,4 @@ void run_match_shapes();			// matchShapes() compares two contours and returns a 
 									// and 1 (dissimilar)
 void run_canny();					// the canny edge detection algorithm
 void run_corner_harris();			// corner detection using Harris algorithm
+void run_corner_eigen_val_vect();	// eigen values and vectors for robust corner and edge detection
