@@ -9,6 +9,7 @@ void run_green_detection_mask() {
 	cv::Mat notGreenMask;
 	cv::Mat grayImg;
 	cv::Mat maskedGrayImg;
+	cv::Mat bilatFilteredImg;
 	cv::Mat cornerEigenResponse;
 	cv::Mat dilatedImg;
 	cv::Mat outputImgWithCorners;
@@ -33,9 +34,12 @@ void run_green_detection_mask() {
 	// applying mask
 	cv::cvtColor(img, grayImg, cv::COLOR_BGR2GRAY);
 	grayImg.copyTo(maskedGrayImg, notGreenMask);
-	cv::Mat responseExtract = cv::Mat::zeros(maskedGrayImg.size(), CV_32FC1);
 
-	cv::cornerEigenValsAndVecs(maskedGrayImg, cornerEigenResponse, blockSize, kSize, cv::BORDER_DEFAULT);
+	// try some filtering
+	cv::GaussianBlur(maskedGrayImg, bilatFilteredImg, cv::Size(5, 5), 1.0, 1.0);
+
+	cv::Mat responseExtract = cv::Mat::zeros(bilatFilteredImg.size(), CV_32FC1);
+	cv::cornerEigenValsAndVecs(bilatFilteredImg, cornerEigenResponse, blockSize, kSize, cv::BORDER_DEFAULT);
 
 	// corner response extraction
 	for (int i = 0; i < cornerEigenResponse.rows; i++) {
@@ -68,8 +72,6 @@ void run_green_detection_mask() {
 	// show the picture with corners
 	cv::cvtColor(grayImg, outputImgWithCorners, cv::COLOR_GRAY2BGR);
 	cv::Point cornerPoint;
-	
-
 
 	for (int i = 0; i < finalCorners.rows; i++) {
 		for (int j = 0; j < finalCorners.cols; j++) {
