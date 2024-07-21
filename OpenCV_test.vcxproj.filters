@@ -186,6 +186,9 @@
     <ClCompile Include="corner_eigen_val_vect.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="_green_detection_mask.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="opencv_test.h">

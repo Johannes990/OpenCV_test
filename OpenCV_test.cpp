@@ -63,8 +63,8 @@ int main()
     //run_match_shapes();
     //run_canny();
     //run_corner_harris();
-    run_corner_eigen_val_vect();
-
+    //run_corner_eigen_val_vect();
+    run_green_detection_mask();
 
     return 0;
 }
