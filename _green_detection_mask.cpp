@@ -9,15 +9,14 @@ void run_green_detection_mask() {
 	cv::Mat notGreenMask;
 	cv::Mat grayImg;
 	cv::Mat maskedGrayImg;
-	cv::Mat bilatFilteredImg;
 	cv::Mat cornerEigenResponse;
 	cv::Mat dilatedImg;
 	cv::Mat outputImgWithCorners;
 	const cv::Scalar cornerColor = cv::Scalar(50, 50, 255);
-	const int blockSize = 3;
-	const int kSize = 3;
+	const int blockSize = 21;
+	const int kSize = 7;
 	const int cornerRadius = 3;
-	const int cornerThickness = 1;
+	const int cornerThickness = 2;
 
 	// converting to hue and saturation based colormap to better separate green hues
 	cv::cvtColor(img, hsvImg, cv::COLOR_BGR2HSV);
@@ -26,7 +25,7 @@ void run_green_detection_mask() {
 	// hue:			35 - 80 should be the green hue range
 	// saturation:	40 - 255 to avoid very light greens closer to white
 	// value:		40 - 255 to avoid very dark regions that might be shadows
-	cv::Scalar filterValuesFrom = cv::Scalar(35, 40, 40);
+	cv::Scalar filterValuesFrom = cv::Scalar(35, 0, 0);
 	cv::Scalar filterValuesTo = cv::Scalar(80, 255, 255);
 	cv::inRange(hsvImg, filterValuesFrom, filterValuesTo, greenMask);
 	cv::bitwise_not(greenMask, notGreenMask);
@@ -52,7 +51,7 @@ void run_green_detection_mask() {
 	cv::minMaxLoc(cornerEigenResponse, nullptr, &maxVal);
 	double lowThreshold = 0.01 * maxVal;	// this value must be tested and some basis provided for its derivation
 	//cv::Mat strongCorners = (cornerEigenResponse > lowThreshold);	
-	double highThreshold = 0.0111 * maxVal;
+	double highThreshold = 0.03 * maxVal;
 	//cv::Mat softCorners = (cornerEigenResponse <= highThreshold);
 
 	// non maximum suppression
