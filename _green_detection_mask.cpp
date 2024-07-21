@@ -35,11 +35,8 @@ void run_green_detection_mask() {
 	cv::cvtColor(img, grayImg, cv::COLOR_BGR2GRAY);
 	grayImg.copyTo(maskedGrayImg, notGreenMask);
 
-	// try some filtering
-	cv::GaussianBlur(maskedGrayImg, bilatFilteredImg, cv::Size(5, 5), 1.0, 1.0);
-
-	cv::Mat responseExtract = cv::Mat::zeros(bilatFilteredImg.size(), CV_32FC1);
-	cv::cornerEigenValsAndVecs(bilatFilteredImg, cornerEigenResponse, blockSize, kSize, cv::BORDER_DEFAULT);
+	cv::Mat responseExtract = cv::Mat::zeros(maskedGrayImg.size(), CV_32FC1);
+	cv::cornerEigenValsAndVecs(maskedGrayImg, cornerEigenResponse, blockSize, kSize, cv::BORDER_DEFAULT);
 
 	// corner response extraction
 	for (int i = 0; i < cornerEigenResponse.rows; i++) {
@@ -51,10 +48,12 @@ void run_green_detection_mask() {
 	}
 
 	// thresholding
-	double maxVal = 0.0;
+	double maxVal;
 	cv::minMaxLoc(cornerEigenResponse, nullptr, &maxVal);
-	double threshold = 0.025 * maxVal;	// this value must be tested and some basis provided for its derivation
-	cv::Mat strongCorners = (cornerEigenResponse > threshold);
+	double lowThreshold = 0.01 * maxVal;	// this value must be tested and some basis provided for its derivation
+	//cv::Mat strongCorners = (cornerEigenResponse > lowThreshold);	
+	double highThreshold = 0.0111 * maxVal;
+	//cv::Mat softCorners = (cornerEigenResponse <= highThreshold);
 
 	// non maximum suppression
 	cv::dilate(cornerEigenResponse, dilatedImg, cv::Mat());
@@ -63,7 +62,8 @@ void run_green_detection_mask() {
 
 	for (int i = 0; i < cornerEigenResponse.rows; i++) {
 		for (int j = 0; j < cornerEigenResponse.cols; j++) {
-			if (localMax.at<uchar>(i, j) && cornerEigenResponse.at<float>(i, j) > threshold) {
+			if (localMax.at<uchar>(i, j) && cornerEigenResponse.at<float>(i, j) > lowThreshold
+				&& cornerEigenResponse.at<float>(i, j) <= highThreshold) {
 				finalCorners.at<uchar>(i, j) = 255;
 			}
 		}
@@ -72,7 +72,7 @@ void run_green_detection_mask() {
 	// show the picture with corners
 	cv::cvtColor(grayImg, outputImgWithCorners, cv::COLOR_GRAY2BGR);
 	cv::Point cornerPoint;
-
+	
 	for (int i = 0; i < finalCorners.rows; i++) {
 		for (int j = 0; j < finalCorners.cols; j++) {
 			if (finalCorners.at<uchar>(i, j) == 255) {
