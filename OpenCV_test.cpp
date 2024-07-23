@@ -65,7 +65,8 @@ int main()
     //run_corner_harris();
     //run_corner_eigen_val_vect();
     //run_green_detection_mask();
-    run_good_features_to_track();
+    //run_good_features_to_track();
+    run_hough_circles();
 
     return 0;
 }
