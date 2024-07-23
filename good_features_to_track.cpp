@@ -6,9 +6,9 @@ void run_good_features_to_track() {
 	cv::Mat img = cv::imread("C:\\Users\\johan\\OneDrive\\Pictures\\linnapilt.jpg", cv::IMREAD_COLOR);
 	cv::Mat out = img.clone();
 	cv::Mat corners;
-	const int maxCorners = 6;
-	const double qualityLevel = 0.01;
-	const double minDistance = 10.0;
+	const int maxCorners = 30;
+	const double qualityLevel = 0.001;
+	const double minDistance = 100.0;
 	const int blockSize = 4;
 	const float k = 0.05;
 
@@ -18,12 +18,11 @@ void run_good_features_to_track() {
 	cv::goodFeaturesToTrack(img, corners, maxCorners, qualityLevel, minDistance);
 
 	for (int i = 0; i < corners.rows; i++) {
-		cv::Vec2f cPoint = corners.at<cv::Vec2f>(cv::Point(i, 0));
-		std::cout << "Corner point " << i << " is: " << cPoint << std::endl;
+		cv::Vec2f cPoint = corners.at<cv::Vec2f>(cv::Point(0, i));
 		int xCoord = cPoint[0];
 		int yCoord = cPoint[1];
 		cv::Point center = cv::Point(xCoord, yCoord);
-		cv::circle(out, center, 3, cv::Scalar(0, 90, 200), cv::FILLED);
+		cv::circle(out, center, 6, cv::Scalar(0, 90, 200), cv::FILLED);
 	}
 
 	cv::namedWindow("Image", cv::WINDOW_GUI_NORMAL);
