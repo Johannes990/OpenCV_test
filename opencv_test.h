@@ -72,3 +72,4 @@ void run_corner_harris();			// corner detection using Harris algorithm
 void run_corner_eigen_val_vect();	// eigen values and vectors for robust corner and edge detection
 void run_green_detection_mask();	//// testing one possible way of removing trees and grass during corner detection
 									//// - mask out green areas on the picture by hue
+void run_good_features_to_track();	// optimized version of cornerHarris and cornerMinEigenVal
