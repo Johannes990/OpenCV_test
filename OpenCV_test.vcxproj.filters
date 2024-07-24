@@ -198,6 +198,9 @@
     <ClCompile Include="hough_lines.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="named_window.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="opencv_test.h">

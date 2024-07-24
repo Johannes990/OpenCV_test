@@ -67,7 +67,8 @@ int main()
     //run_green_detection_mask();
     //run_good_features_to_track();
     //run_hough_circles();
-    run_hough_lines();
+    //run_hough_lines();
+    run_named_window();
 
     return 0;
 }
