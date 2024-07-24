@@ -74,3 +74,4 @@ void run_green_detection_mask();	//// testing one possible way of removing trees
 									//// - mask out green areas on the picture by hue
 void run_good_features_to_track();	// optimized version of cornerHarris and cornerMinEigenVal
 void run_hough_circles();			// finds circles in an image using a modification of the Hough transform
+void run_hough_lines();				// line detection from a binary image using Hough transform

@@ -195,6 +195,9 @@
     <ClCompile Include="hough_circles.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="hough_lines.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="opencv_test.h">
