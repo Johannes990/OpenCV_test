@@ -7,7 +7,8 @@ void run_select_roi() {
 
 	cv::namedWindow("Img", cv::WINDOW_NORMAL);
 
-	cv::selectROI("Img", img, true, true);
+	cv::Rect r = cv::selectROI(img, true, true);
+	std::cout << r.x << " " << r.y << " " << r.width << " " << r.height << std::endl;
 
 	cv::imshow("Img", img);
 
