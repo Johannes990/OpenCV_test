@@ -2,29 +2,57 @@
 #include "opencv_test.h"
 
 
+void handle_mouse_move(int x, int y) {
+	std::cout << "Mouse moved to coordinates x: " << x << ", y: " << y << std::endl;
+}
+
+void handle_mouse_left_button_down(int x, int y) {
+	std::cout << "Mouse left button pressed at x: " << x << ", y: " << y << std::endl;
+}
+
+void handle_mouse_right_button_down(int x, int y) {
+	std::cout << "Mouse right button pressed at x: " << x << ", y: " << y << std::endl;
+}
+
+void handle_mouse_left_button_up(int x, int y) {
+	std::cout << "Mouse left button released at x: " << x << ", y: " << y << std::endl;
+}
+
+void handle_mouse_right_button_up(int x, int y) {
+	std::cout << "Mouse right button released at x: " << x << ", y: " << y << std::endl;
+}
+
+void handle_mouse_left_double_click(int x, int y) {
+	std::cout << "Mouse left button double-clicked at x: " << x << ", y: " << y << std::endl;
+}
+
+void handle_mouse_right_double_click(int x, int y) {
+	std::cout << "Mouse right button double-clicked at x: " << x << ", y: " << y << std::endl;
+}
+
 // do some stuff with mouse events
 void mouse_event_callback(int mouseEvent, int x, int y, int flags, void* userData) {
 	switch (mouseEvent) {
 	case cv::EVENT_MOUSEMOVE:
-		std::cout << "Mouse moved to coordinates x: " << x << ", y: " << y << std::endl;
+		handle_mouse_move(x, y);
 		break;
 	case cv::EVENT_LBUTTONDOWN:
-		std::cout << "Mouse left button pressed at x: " << x << ", y: " << y << std::endl;
+		handle_mouse_left_button_down(x, y);
 		break;
 	case cv::EVENT_RBUTTONDOWN:
-		std::cout << "Mouse right button pressed at x: " << x << ", y: " << y << std::endl;
+		handle_mouse_right_button_down(x, y);
 		break;
 	case cv::EVENT_LBUTTONUP:
-		std::cout << "Mouse left button released at x: " << x << ", y: " << y << std::endl;
+		handle_mouse_left_button_up(x, y);
 		break;
 	case cv::EVENT_RBUTTONUP:
-		std::cout << "Mouse right button released at x: " << x << ", y: " << y << std::endl;
+		handle_mouse_right_button_up(x, y);
 		break;
 	case cv::EVENT_LBUTTONDBLCLK:
-		std::cout << "Mouse left button double-clicked at x: " << x << ", y: " << y << std::endl;
+		handle_mouse_left_double_click(x, y);
 		break;
 	case cv::EVENT_RBUTTONDBLCLK:
-		std::cout << "Mouse right button double-clicked at x: " << x << ", y: " << y << std::endl;
+		handle_mouse_right_double_click(x, y);
 		break;
 	}
 }
