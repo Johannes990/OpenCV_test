@@ -204,6 +204,9 @@
     <ClCompile Include="move_window.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="destroy_window.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="opencv_test.h">
