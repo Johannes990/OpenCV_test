@@ -70,7 +70,8 @@ int main()
     //run_hough_lines();
     //run_named_window();
     //run_move_window();
-    run_destroy_window();
+    //run_destroy_window();
+    run_resize_window();
 
     return 0;
 }

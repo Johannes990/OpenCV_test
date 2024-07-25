@@ -78,3 +78,4 @@ void run_hough_lines();				// line detection from a binary image using Hough tra
 void run_named_window();			// namedWindow() creates a window that can be used as a placeholder for images and trackbars
 void run_move_window();				// move window to a specified location, what's so special here?...
 void run_destroy_window();			// both destroyWindow and destroyAllWindows
+void run_resize_window();			// resize window to specified size
