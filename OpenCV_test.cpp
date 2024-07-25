@@ -74,8 +74,8 @@ int main()
     //run_resize_window();
     //run_create_trackbar();
     //run_get_trackbar_pos();
-    run_set_mouse_callback();
-
+    //run_set_mouse_callback();
+    run_select_roi();
 
     return 0;
 }
