@@ -19,7 +19,9 @@ void run_create_trackbar() {
 		// fresh and new every time we press a key for a new while-loop iteration
 		textOverlay = img.clone();
 
-		cv::putText(textOverlay, std::to_string(trackbarValue), cv::Point(70 + trackbarValue, 70), 2, 2, cv::Scalar(0, 255, 255), 2);
+		cv::Point textAnchor = cv::Point(70 + trackbarValue, 70);
+		cv::Scalar textColor = cv::Scalar(0 + trackbarValue * 2, 255 - trackbarValue * 2, 255);
+		cv::putText(textOverlay, std::to_string(trackbarValue), textAnchor, 2, 2, textColor, 2);
 
 		cv::imshow("Window", textOverlay);
 
