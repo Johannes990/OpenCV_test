@@ -4,6 +4,7 @@
 
 void run_create_trackbar() {
 	cv::Mat img = cv::imread("C:\\Users\\johan\\OneDrive\\Pictures\\linnapilt.jpg", cv::IMREAD_COLOR);
+	cv::Mat textOverlay;
 	const std::string trackbarName = "Control 1";
 	int trackbarValue = 0;
 	int trackbarMaxValue = 100;
@@ -12,7 +13,16 @@ void run_create_trackbar() {
 
 	cv::createTrackbar(trackbarName, "Window", &trackbarValue, trackbarMaxValue);
 
-	cv::imshow("Window", img);
+	while (true) {
+		// this textOverlay Mat is needed so that the text won't be drawn on the original image
+		// img.clone() clones the image onto the textOverlay and that is then displayed
+		// fresh and new every time we press a key for a new while-loop iteration
+		textOverlay = img.clone();
 
-	cv::waitKey(0);
+		cv::putText(textOverlay, std::to_string(trackbarValue), cv::Point(70 + trackbarValue, 70), 2, 2, cv::Scalar(0, 255, 255), 2);
+
+		cv::imshow("Window", textOverlay);
+
+		cv::waitKey(0);
+	}
 }
