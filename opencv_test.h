@@ -76,3 +76,4 @@ void run_good_features_to_track();	// optimized version of cornerHarris and corn
 void run_hough_circles();			// finds circles in an image using a modification of the Hough transform
 void run_hough_lines();				// line detection from a binary image using Hough transform
 void run_named_window();			// namedWindow() creates a window that can be used as a placeholder for images and trackbars
+void run_move_window();				// move window to a specified location, what's so special here?...

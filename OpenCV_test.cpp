@@ -68,7 +68,8 @@ int main()
     //run_good_features_to_track();
     //run_hough_circles();
     //run_hough_lines();
-    run_named_window();
+    //run_named_window();
+    run_move_window();
 
     return 0;
 }
