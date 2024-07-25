@@ -71,7 +71,8 @@ int main()
     //run_named_window();
     //run_move_window();
     //run_destroy_window();
-    run_resize_window();
+    //run_resize_window();
+    run_create_trackbar();
 
     return 0;
 }

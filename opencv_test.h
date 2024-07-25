@@ -79,3 +79,4 @@ void run_named_window();			// namedWindow() creates a window that can be used as
 void run_move_window();				// move window to a specified location, what's so special here?...
 void run_destroy_window();			// both destroyWindow and destroyAllWindows
 void run_resize_window();			// resize window to specified size
+void run_create_trackbar();			// create a trackbar and attach to a specific window
