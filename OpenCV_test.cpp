@@ -73,7 +73,9 @@ int main()
     //run_destroy_window();
     //run_resize_window();
     //run_create_trackbar();
-    run_get_trackbar_pos();
+    //run_get_trackbar_pos();
+    run_set_mouse_callback();
+
 
     return 0;
 }

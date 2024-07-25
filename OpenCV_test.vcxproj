@@ -204,6 +204,7 @@ xcopy /y /d "C:\Users\johan\opencv\build\x64\vc16\bin\opencv_world4100.dll" "$(O
     <ClCompile Include="resize_window.cpp" />
     <ClCompile Include="rotated_rectangle_intersection.cpp" />
     <ClCompile Include="rotation.cpp" />
+    <ClCompile Include="set_mouse_callback.cpp" />
     <ClCompile Include="sobel_filter.cpp" />
     <ClCompile Include="threshold.cpp" />
     <ClCompile Include="warp_persepective.cpp" />
