@@ -2,6 +2,10 @@
 #include "opencv_test.h"
 
 
+void callback(int a, void*) {
+	std::cout << "Value is: " << a << std::endl;
+}
+
 void run_create_trackbar() {
 	cv::Mat img = cv::imread("C:\\Users\\johan\\OneDrive\\Pictures\\linnapilt.jpg", cv::IMREAD_COLOR);
 	cv::Mat textOverlay;
@@ -11,7 +15,8 @@ void run_create_trackbar() {
 
 	cv::namedWindow("Window", cv::WINDOW_FREERATIO);
 
-	cv::createTrackbar(trackbarName, "Window", &trackbarValue, trackbarMaxValue);
+	// we add the callback function to show some stuff in stdout
+	cv::createTrackbar(trackbarName, "Window", &trackbarValue, trackbarMaxValue, callback);
 
 	while (true) {
 		// this textOverlay Mat is needed so that the text won't be drawn on the original image
