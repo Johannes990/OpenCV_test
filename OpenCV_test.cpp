@@ -76,7 +76,8 @@ int main()
     //run_get_trackbar_pos();
     //run_set_mouse_callback();
     //run_select_roi();
-    run_hconcat_vconcat();
+    //run_hconcat_vconcat();
+    run_merge_split();
 
     return 0;
 }

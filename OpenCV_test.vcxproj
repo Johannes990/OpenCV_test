@@ -190,6 +190,7 @@ xcopy /y /d "C:\Users\johan\opencv\build\x64\vc16\bin\opencv_world4100.dll" "$(O
     <ClCompile Include="intersection_convex_convex.cpp" />
     <ClCompile Include="laplacian.cpp" />
     <ClCompile Include="match_shapes.cpp" />
+    <ClCompile Include="merge_split.cpp" />
     <ClCompile Include="min_area_rectangle.cpp" />
     <ClCompile Include="min_enclosing_circle.cpp" />
     <ClCompile Include="min_enclosing_triangle.cpp" />
