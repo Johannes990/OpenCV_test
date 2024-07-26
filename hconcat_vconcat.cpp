@@ -5,11 +5,12 @@
 void run_hconcat_vconcat() {
 	cv::Mat img1 = cv::imread("C:\\Users\\johan\\OneDrive\\Pictures\\R.jpg");
 	cv::Mat img2 = cv::imread("C:\\Users\\johan\\OneDrive\\Pictures\\random.jpg");
-	cv::Mat hConcat, vConcat;
+	cv::Mat hConcat1, hConcat2, vConcat, both;
 	std::vector<cv::Mat> images;
 
 	cv::namedWindow("Vertical concat", cv::WINDOW_NORMAL);
 	cv::namedWindow("Horizontal concat", cv::WINDOW_NORMAL);
+	cv::namedWindow("Both", cv::WINDOW_AUTOSIZE);
 
 	/*
 	* this will not work because the number of rows between images and the depth of images
@@ -25,19 +26,20 @@ void run_hconcat_vconcat() {
 	*/
 
 	// resize images so they can be concatenated
-	cv::resize(img2, img2, cv::Size(img2.cols, img1.rows));
+	// here make img2 the same size as img1 for ease of manipulation
+	cv::resize(img2, img2, cv::Size(img1.cols, img1.rows));
 
 	images.push_back(img1);
 	images.push_back(img2);
 	
-	cv::hconcat(images, hConcat);
-
-	cv::resize(img1, img1, cv::Size(img2.cols, img1.rows));
-
+	cv::hconcat(images, hConcat1);
 	cv::vconcat(img1, img2, vConcat);
+	cv::hconcat(img2, img1, hConcat2);
+	cv::vconcat(hConcat1, hConcat2, both);
 
 	cv::imshow("Vertical concat", vConcat);
-	cv::imshow("Horizontal concat", hConcat);
+	cv::imshow("Horizontal concat", hConcat1);
+	cv::imshow("Both", both);
 
 	cv::waitKey(0);
 }
