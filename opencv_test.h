@@ -83,3 +83,4 @@ void run_create_trackbar();			// create a trackbar and attach to a specific wind
 void run_get_trackbar_pos();		// getTrackbarPos() returns the current position of the specified trackbar
 void run_set_mouse_callback();		// setMouseCallback() sets the mouse handler for the specified window
 void run_select_roi();				// function to select a region of interest from a window, returns a rectangle with coordinates
+void run_hconcat_vconcat();			// functions for vertical and horizontal concatenation of arrays
