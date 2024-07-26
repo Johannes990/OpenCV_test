@@ -228,6 +228,9 @@
     <ClCompile Include="merge_split.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="extract_channel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="opencv_test.h">

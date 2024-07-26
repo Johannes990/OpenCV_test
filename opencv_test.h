@@ -85,3 +85,4 @@ void run_set_mouse_callback();		// setMouseCallback() sets the mouse handler for
 void run_select_roi();				// function to select a region of interest from a window, returns a rectangle with coordinates
 void run_hconcat_vconcat();			// functions for vertical and horizontal concatenation of arrays
 void run_merge_split();				// merge and split functions
+void run_extract_channel();			// extract a channel from an image or Mat

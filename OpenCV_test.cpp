@@ -77,7 +77,8 @@ int main()
     //run_set_mouse_callback();
     //run_select_roi();
     //run_hconcat_vconcat();
-    run_merge_split();
+    //run_merge_split();
+    run_extract_channel();
 
     return 0;
 }
