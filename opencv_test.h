@@ -87,3 +87,4 @@ void run_hconcat_vconcat();			// functions for vertical and horizontal concatena
 void run_merge_split();				// merge and split functions
 void run_extract_channel();			// extract a channel from an image or Mat
 void run_rotate();					// rotate a 2D array in multiples of 90 degrees
+void run_flip();					// flip a 2D array around either or both horizontal and vertical axis

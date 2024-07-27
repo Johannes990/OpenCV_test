@@ -79,7 +79,8 @@ int main()
     //run_hconcat_vconcat();
     //run_merge_split();
     //run_extract_channel();
-    run_rotate();
+    //run_rotate();
+    run_flip();
 
     return 0;
 }
