@@ -2,7 +2,7 @@
 #include "opencv_test.h"
 
 
-void data_types() {
+void run_data_types() {
 	// unsigned char
 	cv::Mat _8uc1 = cv::Mat::zeros(cv::Size(5, 5), CV_8UC1);
 	std::cout << "_8uc1 matrix: " << _8uc1 << std::endl;

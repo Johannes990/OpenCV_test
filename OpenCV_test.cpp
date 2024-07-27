@@ -19,7 +19,7 @@ int main()
     //run_warp_perspective();
     //run_affine_transform();
     //run_rotation();
-    //data_types();
+    //run_data_types();
     //run_convert_maps();
     //run_remap();
     //run_polar_transformations();
@@ -82,7 +82,8 @@ int main()
     //run_rotate();
     //run_flip();
     //run_count_non_zero();
-    run_insert_channel();
+    //run_insert_channel();
+    run_in_range();
 
     return 0;
 }

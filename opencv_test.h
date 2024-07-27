@@ -13,7 +13,7 @@ void run_warp_perspective();		// transform source image using a transformation m
 void run_affine_transform();		// transform source image usign a transformation matrix that is applied to each pixel
 									// difference with warpPerspective is that the image is not crushed
 void run_rotation();				// rotations
-void data_types();					// some differences between OpenCV built-in data types
+void run_data_types();					// some differences between OpenCV built-in data types
 void run_convert_maps();			// convertMaps is a function that converts Matrices between data types. Example of use
 void run_remap();					// remap applies a generic geometrical transformation to an image.
 									// This actually means that we are mapping pixels from the original image into 2 maps:
@@ -90,3 +90,4 @@ void run_rotate();					// rotate a 2D array in multiples of 90 degrees
 void run_flip();					// flip a 2D array around either or both horizontal and vertical axis
 void run_count_non_zero();			// return the number of non-zero elements in an array
 void run_insert_channel();			// insert a single channel to Matrix (coi is 0-based index)
+void run_in_range();				// check if array elements lie between the elements of 2 other arrays
