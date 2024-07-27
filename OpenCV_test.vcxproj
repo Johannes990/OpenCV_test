@@ -205,6 +205,7 @@ xcopy /y /d "C:\Users\johan\opencv\build\x64\vc16\bin\opencv_world4100.dll" "$(O
     <ClCompile Include="remap.cpp" />
     <ClCompile Include="resize.cpp" />
     <ClCompile Include="resize_window.cpp" />
+    <ClCompile Include="rotate.cpp" />
     <ClCompile Include="rotated_rectangle_intersection.cpp" />
     <ClCompile Include="rotation.cpp" />
     <ClCompile Include="select_roi.cpp" />

@@ -78,7 +78,8 @@ int main()
     //run_select_roi();
     //run_hconcat_vconcat();
     //run_merge_split();
-    run_extract_channel();
+    //run_extract_channel();
+    run_rotate();
 
     return 0;
 }

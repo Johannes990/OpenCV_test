@@ -86,3 +86,4 @@ void run_select_roi();				// function to select a region of interest from a wind
 void run_hconcat_vconcat();			// functions for vertical and horizontal concatenation of arrays
 void run_merge_split();				// merge and split functions
 void run_extract_channel();			// extract a channel from an image or Mat
+void run_rotate();					// rotate a 2D array in multiples of 90 degrees

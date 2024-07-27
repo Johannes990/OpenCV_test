@@ -231,6 +231,9 @@
     <ClCompile Include="extract_channel.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="rotate.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="opencv_test.h">
