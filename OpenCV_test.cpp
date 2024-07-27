@@ -81,7 +81,8 @@ int main()
     //run_extract_channel();
     //run_rotate();
     //run_flip();
-    run_count_non_zero();
+    //run_count_non_zero();
+    run_insert_channel();
 
     return 0;
 }
