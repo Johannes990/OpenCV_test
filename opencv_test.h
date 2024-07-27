@@ -90,4 +90,4 @@ void run_rotate();					// rotate a 2D array in multiples of 90 degrees
 void run_flip();					// flip a 2D array around either or both horizontal and vertical axis
 void run_count_non_zero();			// return the number of non-zero elements in an array
 void run_insert_channel();			// insert a single channel to Matrix (coi is 0-based index)
-void run_in_range();				// check if array elements lie between the elements of 2 other arrays
+void run_in_range();				// check if array elements lie between the elements of 2 other arrays or scalars
