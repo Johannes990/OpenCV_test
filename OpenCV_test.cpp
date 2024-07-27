@@ -83,7 +83,8 @@ int main()
     //run_flip();
     //run_count_non_zero();
     //run_insert_channel();
-    run_in_range();
+    //run_in_range();
+    run_mean();
 
     return 0;
 }
