@@ -80,7 +80,8 @@ int main()
     //run_merge_split();
     //run_extract_channel();
     //run_rotate();
-    run_flip();
+    //run_flip();
+    run_count_non_zero();
 
     return 0;
 }

@@ -237,6 +237,9 @@
     <ClCompile Include="flip.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="count_non_zero.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="opencv_test.h">
