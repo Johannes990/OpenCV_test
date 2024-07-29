@@ -3,7 +3,7 @@
 
 
 void run_complete_symm() {
-	cv::Mat img = cv::imread("C:\\Users\\johan\\OneDrive\\Pictures\\trashcan.jpg", cv::IMREAD_GRAYSCALE);
+	cv::Mat img = cv::imread("C:\\Users\\johan\\OneDrive\\Pictures\\trashcan.jpg", cv::IMREAD_COLOR);
 	cv::Mat resized;
 	cv::Mat matrix = cv::Mat::zeros(4, 4, CV_8UC1);
 	matrix.at<uchar>(cv::Point(1, 0)) = 150;
