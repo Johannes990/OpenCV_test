@@ -15,7 +15,10 @@ void run_pow() {
 
 	cv::namedWindow("Matrix", cv::WINDOW_NORMAL);
 
-	cv::imshow("Matrix", smallMat);
+	cv::imshow("Matrix", smallMatOut);
+
+	std::cout << smallMat << std::endl;
+	std::cout << smallMatOut << std::endl;
 
 	cv::waitKey(0);
 }
