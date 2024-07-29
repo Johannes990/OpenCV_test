@@ -255,6 +255,9 @@
     <ClCompile Include="find_non_zero.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="complete_symm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="opencv_test.h">

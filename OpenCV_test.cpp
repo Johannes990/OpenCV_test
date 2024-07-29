@@ -86,7 +86,8 @@ int main()
     //run_in_range();
     //run_mean();
     //run_compare();
-    run_find_non_zero();
+    //run_find_non_zero();
+    run_complete_symm();
 
     return 0;
 }
