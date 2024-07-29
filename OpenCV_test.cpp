@@ -88,7 +88,8 @@ int main()
     //run_compare();
     //run_find_non_zero();
     //run_complete_symm();
-    run_min_max();
+    //run_min_max();
+    run_pow();
 
     return 0;
 }

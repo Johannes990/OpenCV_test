@@ -261,6 +261,9 @@
     <ClCompile Include="min_max.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="pow.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="opencv_test.h">

@@ -97,3 +97,4 @@ void run_find_non_zero();			// given a binary matrix, return a list of locations
 void run_complete_symm();			// copies the lower or upper half of a square matrix to its other half
 void run_min_max();					// min() calculates per-element minimum of two arrays or an array and a scalar
 									// max() calculates per-element maximum of two arrays or an array and a scalar
+void run_pow();						// raise every array element to a power. Special values are not handled
