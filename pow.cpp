@@ -11,7 +11,8 @@ void run_pow() {
 	smallMat.at<uchar>(cv::Point(3, 1)) = 5;
 	smallMat.at<uchar>(cv::Point(1, 1)) = 6;
 
-	cv::pow(smallMat, 2, smallMatOut);
+	// second parameter is the power level
+	cv::pow(smallMat, 3, smallMatOut);
 
 	cv::namedWindow("Matrix", cv::WINDOW_NORMAL);
 
