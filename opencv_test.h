@@ -95,3 +95,4 @@ void run_mean();					// calculate the mean(arithmetic average) of all array elem
 void run_compare();					// perform a per-element compare between 2 arrays or an array and a Scalar
 void run_find_non_zero();			// given a binary matrix, return a list of locations of all non-zero pixels
 void run_complete_symm();			// copies the lower or upper half of a square matrix to its other half
+void run_min_max();					//

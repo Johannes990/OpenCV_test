@@ -258,6 +258,9 @@
     <ClCompile Include="complete_symm.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="min_max.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="opencv_test.h">
