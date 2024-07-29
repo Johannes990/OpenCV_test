@@ -85,7 +85,8 @@ int main()
     //run_insert_channel();
     //run_in_range();
     //run_mean();
-    run_compare();
+    //run_compare();
+    run_find_non_zero();
 
     return 0;
 }

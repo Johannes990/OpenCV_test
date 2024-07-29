@@ -93,3 +93,4 @@ void run_insert_channel();			// insert a single channel to Matrix (coi is 0-base
 void run_in_range();				// check if array elements lie between the elements of 2 other arrays or scalars
 void run_mean();					// calculate the mean(arithmetic average) of all array elements
 void run_compare();					// perform a per-element compare between 2 arrays or an array and a Scalar
+void run_find_non_zero();			// given a binary matrix, return a list of locations of all non-zero pixels
