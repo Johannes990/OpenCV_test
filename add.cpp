@@ -7,9 +7,13 @@ void run_add() {
 	cv::Mat smallMat = cv::Mat::zeros(3, 3, CV_8UC1);
 	cv::Mat smallAddOut, imgAddOut;
 	cv::Scalar singleChannelAddend = cv::Scalar(50); // add 50 to a single channel
-	cv::Scalar tripleChannelAddend = cv::Scalar(50, 50, 50); // add 50 to all three channels
+	int tripleChannelAddendScalar = 50;
+	int biasValue = -50;
 
 	cv::namedWindow("Img", cv::WINDOW_NORMAL);
+	cv::namedWindow("added", cv::WINDOW_NORMAL);
+
+	cv::createTrackbar("Add value", "added", &tripleChannelAddendScalar, 100);
 
 	cv::imshow("Img", img);
 
@@ -23,11 +27,19 @@ void run_add() {
 	cv::waitKey(0);
 
 	// show image for a large matrix
-	cv::add(img, tripleChannelAddend, imgAddOut);
-	
-	cv::namedWindow("added", cv::WINDOW_NORMAL);
+	while (true) {
+		cv::Scalar tripleChannelAddend = cv::Scalar(
+			tripleChannelAddendScalar + biasValue,
+			tripleChannelAddendScalar + biasValue,
+			tripleChannelAddendScalar + biasValue
+		); // add some amount to all three channels
 
-	cv::imshow("added", imgAddOut);
+		cv::add(img, tripleChannelAddend, imgAddOut);
 
-	cv::waitKey(0);
+		cv::imshow("added", imgAddOut);
+
+		int ch = cv::waitKey(5);
+
+		if ((char)ch == 'q') { break; }
+	}
 }
