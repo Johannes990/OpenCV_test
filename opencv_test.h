@@ -100,3 +100,4 @@ void run_min_max();					// min() calculates per-element minimum of two arrays or
 void run_pow();						// raise every array element to a power. Special values are not handled
 void run_multiply();				// per element scaled product of two arrays
 void run_transpose();				// transpose a matrix
+void run_add();						// calculate the sum of two arrays element-wise, or the sum of an array and a scalar

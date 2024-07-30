@@ -91,7 +91,8 @@ int main()
     //run_min_max();
     //run_pow();
     //run_multiply();
-    run_transpose();
+    //run_transpose();
+    run_add();
 
     return 0;
 }
