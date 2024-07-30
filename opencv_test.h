@@ -98,3 +98,4 @@ void run_complete_symm();			// copies the lower or upper half of a square matrix
 void run_min_max();					// min() calculates per-element minimum of two arrays or an array and a scalar
 									// max() calculates per-element maximum of two arrays or an array and a scalar
 void run_pow();						// raise every array element to a power. Special values are not handled
+void run_multiply();				// per element scaled product of two arrays
