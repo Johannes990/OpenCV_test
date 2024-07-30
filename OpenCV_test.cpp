@@ -90,7 +90,8 @@ int main()
     //run_complete_symm();
     //run_min_max();
     //run_pow();
-    run_multiply();
+    //run_multiply();
+    run_transpose();
 
     return 0;
 }
