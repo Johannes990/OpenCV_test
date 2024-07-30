@@ -19,6 +19,7 @@ void run_multiply() {
 
 	cv::imshow("In", img);
 	cv::imshow("Out", out); // image turned blue???
+							// by default, only multiplies the first channel, which is blue
 
 	cv::waitKey(0);
 
