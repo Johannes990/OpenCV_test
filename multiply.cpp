@@ -22,7 +22,8 @@ void run_multiply() {
 
 	cv::waitKey(0);
 
-	// change mask
+	// change mask to cut out an eight of the picture
+	// from the lower right part
 	for (int i = mask.cols / 2; i < mask.cols; i++) {
 		for (int j = mask.rows * 0.75; j < mask.rows; j++) {
 			mask.at<cv::Vec3b>(cv::Point(i, j)) = 0;
