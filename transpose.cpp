@@ -7,8 +7,12 @@ void run_transpose() {
 	cv::Mat transposed;
 
 	cv::namedWindow("In", cv::WINDOW_NORMAL);
+	cv::namedWindow("Transposed", cv::WINDOW_NORMAL);
+
+	cv::transpose(img, transposed);
 
 	cv::imshow("In", img);
+	cv::imshow("Transposed", transposed);
 
 	cv::waitKey(0);
 }
