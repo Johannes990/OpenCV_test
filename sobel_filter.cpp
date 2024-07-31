@@ -3,7 +3,7 @@
 
 
 void run_sobel_filter() {
-    cv::Mat img = cv::imread("C:\\Users\\johan\\OneDrive\\Pictures\\pildid\\IMG_20240624_182926.jpg", cv::IMREAD_COLOR);
+    cv::Mat img = cv::imread("C:\\Users\\johan\\OneDrive\\Pictures\\linnapilt.jpg", cv::IMREAD_COLOR);
     cv::Mat grayScaleImg, sobelImg;
     cv::namedWindow("Sobel Output", cv::WINDOW_NORMAL);
 
