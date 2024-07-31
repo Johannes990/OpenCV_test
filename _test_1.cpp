@@ -59,11 +59,11 @@ cv::Rect normalize_rect(const cv::Rect& r) {
 	return get_normalized_rect_from_points(x1, y1, x2, y2);
 }
 
-cv::Mat downscale_image(const cv::Mat& img) {
+cv::Mat downscale_image(const cv::Mat& img, const int& maxSize) {
 	cv::Mat returnImg = img.clone();
 	int scaleFactor = 1;
-	int xMax = 1200;
-	int yMax = 1200;
+	int xMax = maxSize;
+	int yMax = maxSize;
 
 	while (returnImg.rows > yMax || returnImg.cols > xMax) {
 		scaleFactor *= 2;
@@ -75,12 +75,13 @@ cv::Mat downscale_image(const cv::Mat& img) {
 }
 
 void run_test_1() {
+	const int maxPictureSize = 1200;
 	cv::Mat img1 = cv::imread("C:\\Users\\johan\\OneDrive\\Pictures\\pildid\\torn1.jpg", cv::IMREAD_COLOR);
 	cv::Mat img2 = cv::imread("C:\\Users\\johan\\OneDrive\\Pictures\\pildid\\torn2.jpg", cv::IMREAD_COLOR);
 	cv::Mat img3 = cv::imread("C:\\Users\\johan\\OneDrive\\Pictures\\pildid\\torn3.jpg", cv::IMREAD_COLOR);
-	cv::Mat downscaleImg1 = downscale_image(img1);
-	cv::Mat downscaleImg2 = downscale_image(img2);
-	cv::Mat downscaleImg3 = downscale_image(img3);
+	cv::Mat downscaleImg1 = downscale_image(img1, maxPictureSize);
+	cv::Mat downscaleImg2 = downscale_image(img2, maxPictureSize);
+	cv::Mat downscaleImg3 = downscale_image(img3, maxPictureSize);
 	cv::Mat grayImg1, grayImg2, grayImg3, harris1, harris2, harris3, out1, out2, out3;
 	int r1StartX, r1StartY, r2StartX, r2StartY, r3StartX, r3StartY,
 		r1EndX, r1EndY, r2EndX, r2EndY, r3EndX, r3EndY;
