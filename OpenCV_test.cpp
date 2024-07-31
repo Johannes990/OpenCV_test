@@ -93,7 +93,8 @@ int main()
     //run_multiply();
     //run_transpose();
     //run_add();
-    run_add_weighted();
+    //run_add_weighted();
+    run_divide();
 
     return 0;
 }
