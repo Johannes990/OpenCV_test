@@ -6,7 +6,7 @@
 #include "opencv_test.h"
 
 
-int main()
+int main(int argc, char *argv[])
 {
     //run_blur_filters();
     //run_conv_filters();
