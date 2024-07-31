@@ -2,21 +2,28 @@
 #include "opencv_test.h"
 
 
-int get_abs_length(const int startPoint, const int endPoint) {
+int get_abs_length(const int& startPoint, const int& endPoint) {
 	return std::abs(endPoint - startPoint);
 }
 
-int get_odd_larger_than_min(const int min, const int input) {
-	int localMin = min;
+int get_ge_min(const int& min, const int& input) {
 	int returnVal = input;
+
+	if (returnVal < min) {
+		returnVal = min;
+	}
+
+	return returnVal;
+}
+
+int get_odd_ge_min(const int& min, const int& input) {
+	int localMin = min;
 
 	if (min % 2 == 0) {
 		localMin++;
 	}
 
-	if (input < localMin) {
-		returnVal = localMin;
-	}
+	int returnVal = get_ge_min(localMin, input);
 
 	if (returnVal % 2 == 0) {
 		returnVal++;
@@ -25,7 +32,7 @@ int get_odd_larger_than_min(const int min, const int input) {
 	return returnVal;
 }
 
-cv::Rect get_normalized_rect_from_points(const int x1, const int y1, const int x2, const int y2) {
+cv::Rect get_normalized_rect_from_points(const int& x1, const int& y1, const int& x2, const int& y2) {
 	int width = get_abs_length(x1, x2);
 	int height = get_abs_length(y1, y2);
 
@@ -43,7 +50,7 @@ cv::Rect get_normalized_rect_from_points(const int x1, const int y1, const int x
 	}
 }
 
-cv::Rect normalize_rect(const cv::Rect r) {
+cv::Rect normalize_rect(const cv::Rect& r) {
 	int x1 = r.x;
 	int y1 = r.y;
 	int x2 = r.x + r.width;
@@ -104,7 +111,7 @@ void run_test_1() {
 	int harrisKSize = 3;
 	int harrisBlockSize = 3;
 	int harrisFreeParam = 1;
-	double harrisValue = 0.002;
+	double harrisValue = 0.0001;
 	double harrisFree = 0.0002;
 
 	cv::namedWindow("cropped Im1", cv::WINDOW_NORMAL);
@@ -137,7 +144,8 @@ void run_test_1() {
 		if ((char)ch == 'd') {
 			double kFree = harrisFree * harrisFreeParam;
 			double harrisThresh = harrisValue * harrisValueMultiplier;
-			int normHarrisKSize = get_odd_larger_than_min(3, harrisKSize);
+			int normHarrisKSize = get_odd_ge_min(3, harrisKSize);
+			harrisBlockSize = get_ge_min(1, harrisBlockSize);
 
 			cv::cornerHarris(grayImg1, harris1, harrisBlockSize, normHarrisKSize, kFree);
 			cv::cornerHarris(grayImg2, harris2, harrisBlockSize, normHarrisKSize, kFree);
@@ -168,7 +176,7 @@ void run_test_1() {
 					cv::Point p = cv::Point(i, j);
 
 					if (harris3.at<float>(p) > harrisThresh) {
-						cv::circle(out3, p, 2, cornerColor, cv::FILLED);
+						cv::circle(out3, p, 1, cornerColor, cv::FILLED);
 					}
 				}
 			}
@@ -178,6 +186,4 @@ void run_test_1() {
 			cv::imshow("cropped Im3", out3);
 		}
 	}
-
-	cv::waitKey(0);
 }
