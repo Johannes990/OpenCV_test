@@ -104,7 +104,7 @@ void run_test_1() {
 	r3StartY = r3Norm.y;
 	r3EndX = r3Norm.x + r3Norm.width;
 	r3EndY = r3Norm.y + r3Norm.height;
-	// rows first, then columns
+	// to rescale, set rows first, then columns
 	cv::Mat croppedImg1 = downscaleImg1(cv::Range(r1StartY, r1EndY), cv::Range(r1StartX, r1EndX));
 	cv::Mat croppedImg2 = downscaleImg2(cv::Range(r2StartY, r2EndY), cv::Range(r2StartX, r2EndX));
 	cv::Mat croppedImg3 = downscaleImg3(cv::Range(r3StartY, r3EndY), cv::Range(r3StartX, r3EndX));
