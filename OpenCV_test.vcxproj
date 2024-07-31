@@ -145,6 +145,7 @@ xcopy /y /d "C:\Users\johan\opencv\build\x64\vc16\bin\opencv_world4100.dll" "$(O
   <ItemGroup>
     <ClCompile Include="adaptive_threshold.cpp" />
     <ClCompile Include="add.cpp" />
+    <ClCompile Include="add_weighted.cpp" />
     <ClCompile Include="affine_transform.cpp" />
     <ClCompile Include="apply_color_map.cpp" />
     <ClCompile Include="approx_poly_dp.cpp" />

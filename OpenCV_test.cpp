@@ -92,7 +92,8 @@ int main()
     //run_pow();
     //run_multiply();
     //run_transpose();
-    run_add();
+    //run_add();
+    run_add_weighted();
 
     return 0;
 }

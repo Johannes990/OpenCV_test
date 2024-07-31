@@ -101,3 +101,4 @@ void run_pow();						// raise every array element to a power. Special values are
 void run_multiply();				// per element scaled product of two arrays
 void run_transpose();				// transpose a matrix
 void run_add();						// calculate the sum of two arrays element-wise, or the sum of an array and a scalar
+void run_add_weighted();			// calculate the weighted sum of two arrays: a1*alpha + a2*beta + gamma
