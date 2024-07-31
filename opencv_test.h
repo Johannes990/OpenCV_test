@@ -104,4 +104,4 @@ void run_add();						// calculate the sum of two arrays element-wise, or the sum
 void run_add_weighted();			// calculate the weighted sum of two arrays: a1*alpha + a2*beta + gamma
 void run_divide();					// per-element division of two arrays or an array with a scalar
 void run_lines_contours();			// test line and contour finding with trackbars to set different parameters
-void run_test_1();					// test edge / corner detection with rather clean image
+void run_test_1();					// test edge / corner detection from ROI of image
