@@ -94,7 +94,8 @@ int main()
     //run_transpose();
     //run_add();
     //run_add_weighted();
-    run_divide();
+    //run_divide();
+    run_lines_contours();
 
     return 0;
 }

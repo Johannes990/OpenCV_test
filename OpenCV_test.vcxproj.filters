@@ -279,6 +279,9 @@
     <ClCompile Include="divide.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="_finding_lines_and_contours.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="opencv_test.h">
