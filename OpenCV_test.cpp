@@ -95,7 +95,8 @@ int main(int argc, char *argv[])
     //run_add();
     //run_add_weighted();
     //run_divide();
-    run_lines_contours();
+    //run_lines_contours();
+    run_test_1();
 
     return 0;
 }
