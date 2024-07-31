@@ -8,7 +8,7 @@ void run_add_weighted() {
 	cv::Mat out;
 	const double alpha = 0.45;
 	const double beta = 1 - alpha;
-	const double gamma = 0.0;
+	const double gamma = 50.0;
 
 	cv::resize(img1, img1, cv::Size(img2.cols, img2.rows));
 
