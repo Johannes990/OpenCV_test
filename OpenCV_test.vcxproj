@@ -104,7 +104,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>X:\OpenCV\build\install\include\include_msvc;X:\Qt\6.6.3\msvc2019_64\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>X:\Qt\6.6.3\msvc2019_64\include\QtWidgets;X:\Qt\6.6.3\msvc2019_64\include\QtGui;X:\Qt\6.6.3\msvc2019_64\include\QtCore;X:\OpenCV\build\install\include\include_msvc;X:\Qt\6.6.3\msvc2019_64\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -126,7 +126,7 @@ xcopy /y /d "C:\Users\johan\opencv\build\x64\vc16\bin\opencv_world4100.dll" "$(O
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>X:\OpenCV\build\install\include\include_msvc;X:\Qt\6.6.3\msvc2019_64\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>X:\Qt\6.6.3\msvc2019_64\include\QtWidgets;X:\Qt\6.6.3\msvc2019_64\include\QtGui;X:\Qt\6.6.3\msvc2019_64\include\QtCore;X:\OpenCV\build\install\include\include_msvc;X:\Qt\6.6.3\msvc2019_64\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
