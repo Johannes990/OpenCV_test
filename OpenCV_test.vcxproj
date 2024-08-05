@@ -159,6 +159,7 @@ xcopy /y /d "C:\Users\johan\opencv\build\x64\vc16\bin\opencv_world4100.dll" "$(O
     <ClCompile Include="calculate_back_projection.cpp" />
     <ClCompile Include="calculate_histogram.cpp" />
     <ClCompile Include="canny.cpp" />
+    <ClCompile Include="check_range.cpp" />
     <ClCompile Include="clahe.cpp" />
     <ClCompile Include="compare.cpp" />
     <ClCompile Include="compare_histogram.cpp" />
