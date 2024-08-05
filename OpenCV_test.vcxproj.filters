@@ -306,6 +306,9 @@
     <ClCompile Include="invert.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="eigen.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="opencv_test.h">

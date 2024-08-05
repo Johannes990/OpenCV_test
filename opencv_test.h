@@ -112,3 +112,4 @@ void run_min_max_idx();				// minMaxIdx() finds the global minimum and maximum i
 void run_exp();						// calculates the exponent for every array element: dst[I] = exp(src[I])
 void run_convert_scale_abs();		// scale, calculate abs values and convert to 8-bit
 void run_invert();					// calculate the inverse of a matrix
+void run_eigen();					// calculate eingevalues and eigenvectors

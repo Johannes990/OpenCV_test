@@ -103,7 +103,8 @@ int main(int argc, char *argv[])
     //run_min_max_idx();
     //run_exp();
     //run_convert_scale_abs();
-    run_invert();
+    //run_invert();
+    run_eigen();
 
     return 0;
 }
