@@ -291,6 +291,9 @@
     <ClCompile Include="determinant.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="min_max_loc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="opencv_test.h">

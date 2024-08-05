@@ -107,3 +107,4 @@ void run_lines_contours();			// test line and contour finding with trackbars to 
 void run_test_1();					// test edge / corner detection from ROI of image
 void run_mean_std_dev();			// calculate the mean and standard deviation of a matrix
 void run_determinant();				// calculate the determinant of a matrix
+void run_min_max_loc();				// minMaxLoc() finds the minimum and maximum pixels in an image
