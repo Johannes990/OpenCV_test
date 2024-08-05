@@ -185,6 +185,7 @@ xcopy /y /d "C:\Users\johan\opencv\build\x64\vc16\bin\opencv_world4100.dll" "$(O
     <ClCompile Include="drawing_methods_II.cpp" />
     <ClCompile Include="emd.cpp" />
     <ClCompile Include="equalize_histogram.cpp" />
+    <ClCompile Include="exp.cpp" />
     <ClCompile Include="extract_channel.cpp" />
     <ClCompile Include="find_contours.cpp" />
     <ClCompile Include="find_non_zero.cpp" />

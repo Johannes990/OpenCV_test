@@ -100,7 +100,8 @@ int main(int argc, char *argv[])
     //run_mean_std_dev();
     //run_determinant();
     //run_min_max_loc();
-    run_min_max_idx();
+    //run_min_max_idx();
+    run_exp();
 
     return 0;
 }
