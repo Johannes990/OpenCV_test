@@ -285,6 +285,9 @@
     <ClCompile Include="_test_1.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="mean_std_dev.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="opencv_test.h">

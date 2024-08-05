@@ -96,7 +96,8 @@ int main(int argc, char *argv[])
     //run_add_weighted();
     //run_divide();
     //run_lines_contours();
-    run_test_1();
+    //run_test_1();
+    run_mean_std_dev();
 
     return 0;
 }
