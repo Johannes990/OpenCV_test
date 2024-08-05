@@ -12,12 +12,12 @@ void run_convert_scale_abs() {
 	cv::namedWindow("B", cv::WINDOW_NORMAL);
 	cv::namedWindow("B out", cv::WINDOW_NORMAL);
 
-	std::cout << "A: " << A << std::endl;
-	std::cout << "B: " << B << std::endl;
+	std::cout << "A:\n" << A << std::endl;
+	std::cout << "B:\n" << B << std::endl;
 
 	cv::convertScaleAbs(B, out);
 
-	std::cout << "B output with converScaleAbs: " << out << std::endl;
+	std::cout << "B output with converScaleAbs:\n" << out << std::endl;
 
 	cv::imshow("A", A);
 	cv::imshow("B", B);
