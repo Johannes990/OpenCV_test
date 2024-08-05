@@ -242,6 +242,7 @@ xcopy /y /d "C:\Users\johan\opencv\build\x64\vc16\bin\opencv_world4100.dll" "$(O
     <ClCompile Include="watershed.cpp" />
     <ClCompile Include="_finding_lines_and_contours.cpp" />
     <ClCompile Include="_green_detection_mask.cpp" />
+    <ClCompile Include="_shi_thomasi.cpp" />
     <ClCompile Include="_test_1.cpp" />
     <ClCompile Include="_test_stuff.cpp" />
   </ItemGroup>

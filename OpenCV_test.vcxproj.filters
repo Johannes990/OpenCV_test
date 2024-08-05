@@ -312,6 +312,9 @@
     <ClCompile Include="bitwise_ops.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="_shi_thomasi.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="opencv_test.h">

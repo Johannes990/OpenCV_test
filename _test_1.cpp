@@ -2,10 +2,6 @@
 #include "opencv_test.h"
 
 
-int get_abs_length(const int& startPoint, const int& endPoint) {
-	return std::abs(endPoint - startPoint);
-}
-
 int get_ge_min(const int& min, const int& input) {
 	int returnVal = input;
 
@@ -30,48 +26,6 @@ int get_odd_ge_min(const int& min, const int& input) {
 	}
 
 	return returnVal;
-}
-
-cv::Rect get_normalized_rect_from_points(const int& x1, const int& y1, const int& x2, const int& y2) {
-	int width = get_abs_length(x1, x2);
-	int height = get_abs_length(y1, y2);
-
-	if (x2 <= x1 && y1 <= y2) {
-		return cv::Rect(x2, y1, width, height);
-	}
-	else if (x2 <= x1 && y2 <= y1) {
-		return cv::Rect(x2, y2, width, height);
-	}
-	else if (x1 <= x2 && y1 <= y2) {
-		return cv::Rect(x1, y1, width, height);
-	}
-	else {
-		return cv::Rect(x1, y2, width, height);
-	}
-}
-
-cv::Rect normalize_rect(const cv::Rect& r) {
-	int x1 = r.x;
-	int y1 = r.y;
-	int x2 = r.x + r.width;
-	int y2 = r.y + r.height;
-
-	return get_normalized_rect_from_points(x1, y1, x2, y2);
-}
-
-cv::Mat downscale_image(const cv::Mat& img, const int& maxSize) {
-	cv::Mat returnImg = img.clone();
-	int scaleFactor = 1;
-	int xMax = maxSize;
-	int yMax = maxSize;
-
-	while (returnImg.rows > yMax || returnImg.cols > xMax) {
-		scaleFactor *= 2;
-
-		cv::resize(returnImg, returnImg, cv::Size(img.cols / scaleFactor, img.rows / scaleFactor));
-	}
-
-	return returnImg;
 }
 
 void run_test_1() {
