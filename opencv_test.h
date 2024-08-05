@@ -111,3 +111,4 @@ void run_min_max_loc();				// minMaxLoc() finds the minimum and maximum pixels i
 void run_min_max_idx();				// minMaxIdx() finds the global minimum and maximum in an array, diff with minMaxLoc() ?
 void run_exp();						// calculates the exponent for every array element: dst[I] = exp(src[I])
 void run_convert_scale_abs();		// scale, calculate abs values and convert to 8-bit
+void run_invert();					// calculate the inverse of a matrix

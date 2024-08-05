@@ -303,6 +303,9 @@
     <ClCompile Include="convert_scale_abs.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="invert.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="opencv_test.h">
