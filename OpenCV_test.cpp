@@ -105,7 +105,8 @@ int main(int argc, char *argv[])
     //run_convert_scale_abs();
     //run_invert();
     //run_eigen();
-    run_bitwise_ops();
+    //run_bitwise_ops();
+    run_shi_thomasi();
 
     return 0;
 }
