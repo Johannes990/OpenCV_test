@@ -97,7 +97,8 @@ int main(int argc, char *argv[])
     //run_divide();
     //run_lines_contours();
     //run_test_1();
-    run_mean_std_dev();
+    //run_mean_std_dev();
+    run_determinant();
 
     return 0;
 }

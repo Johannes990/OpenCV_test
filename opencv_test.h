@@ -105,4 +105,5 @@ void run_add_weighted();			// calculate the weighted sum of two arrays: a1*alpha
 void run_divide();					// per-element division of two arrays or an array with a scalar
 void run_lines_contours();			// test line and contour finding with trackbars to set different parameters
 void run_test_1();					// test edge / corner detection from ROI of image
-void run_mean_std_dev();			// calculate the mean and standard deviation of a matrix?
+void run_mean_std_dev();			// calculate the mean and standard deviation of a matrix
+void run_determinant();				// calculate the determinant of a matrix

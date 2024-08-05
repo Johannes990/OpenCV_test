@@ -288,6 +288,9 @@
     <ClCompile Include="mean_std_dev.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="determinant.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="opencv_test.h">
