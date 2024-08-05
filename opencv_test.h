@@ -1,5 +1,10 @@
 #pragma once
 
+int get_abs_length(const int& startPoint, const int& endPoint);
+cv::Rect get_normalized_rect_from_points(const int& x1, const int& y1, const int& x2, const int& y2);
+cv::Rect normalize_rect(const cv::Rect& r);
+cv::Mat downscale_image(const cv::Mat& img, const int& maxSize);
+
 void run_blur_filters();			// some different kind of noise smoothing filters - Median or bilinear are best to keep edges
 void run_conv_filters();			// cnn kernel using 2d conv filter
 void run_sobel_filter();			// sobel operator
