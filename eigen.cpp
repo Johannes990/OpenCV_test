@@ -3,7 +3,7 @@
 
 
 void run_eigen() {
-	cv::Mat matrix = cv::Mat::zeros(3, 4, CV_32FC1);
+	cv::Mat matrix = cv::Mat::zeros(3, 3, CV_32FC1);
 	cv::Mat eigenVectors, eigenValues;
 
 	matrix.at<float>(cv::Point(1, 0)) = 5.5;
@@ -14,6 +14,7 @@ void run_eigen() {
 
 	std::cout << matrix << std::endl;
 
+	// gives error when input matrix is not square
 	cv::eigen(matrix, eigenValues, eigenVectors);
 
 	std::cout << "Eigen vectors: " << eigenVectors << std::endl;
