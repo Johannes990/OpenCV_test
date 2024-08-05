@@ -211,6 +211,7 @@ xcopy /y /d "C:\Users\johan\opencv\build\x64\vc16\bin\opencv_world4100.dll" "$(O
     <ClCompile Include="min_enclosing_circle.cpp" />
     <ClCompile Include="min_enclosing_triangle.cpp" />
     <ClCompile Include="min_max.cpp" />
+    <ClCompile Include="min_max_idx.cpp" />
     <ClCompile Include="min_max_loc.cpp" />
     <ClCompile Include="moments.cpp" />
     <ClCompile Include="move_window.cpp" />
