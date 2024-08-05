@@ -14,7 +14,6 @@ cv::Mat shi_thomasi(cv::Mat &img, int maxCorners = 10, double minQuality = 0.01,
 		int xCoord = cPoint[0];
 		int yCoord = cPoint[1];
 		cv::Point center = cv::Point(xCoord, yCoord);
-		std::cout << "Found corner at " << center << std::endl;
 		cv::circle(returnImg, center, 6, cv::Scalar(0, 255, 200), cv::FILLED);
 	}
 
