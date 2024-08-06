@@ -155,7 +155,8 @@ int main(int argc, char *argv[])
     //run_bitwise_ops();
     //run_shi_thomasi();
     //run_check_range();
-    run_log();
+    //run_log();
+    run_psnr();
 
     return 0;
 }
