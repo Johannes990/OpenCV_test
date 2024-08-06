@@ -11,7 +11,7 @@ void run_normalize() {
 	const double alpha = 255;
 	const double beta = 255.0;
 	const int normType = cv::NORM_MINMAX;
-	const int dilationSize = 3;
+	const int dilationSize = 10;
 
 	cv::namedWindow("In", cv::WINDOW_NORMAL);
 	cv::namedWindow("Out", cv::WINDOW_NORMAL);
@@ -23,8 +23,8 @@ void run_normalize() {
 	cv::inRange(hsvImg, greenFilterFrom, greenFilterTo, greenMask);
 
 	// mask expansion using cv::dilate()
-	cv::Size structuringElementSize = cv::Size(2 * dilationSize + 1, 2 * dilationSize + 1);
-	cv::Mat kernel = cv::getStructuringElement(cv::MORPH_ELLIPSE, structuringElementSize);
+	const cv::Size structuringElementSize = cv::Size(2 * dilationSize + 1, 2 * dilationSize + 1);
+	const cv::Mat kernel = cv::getStructuringElement(cv::MORPH_ELLIPSE, structuringElementSize);
 	cv::dilate(greenMask, greenMask, kernel);
 
 	// split image into channels
