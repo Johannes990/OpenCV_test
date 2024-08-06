@@ -12,12 +12,17 @@ void run_log() {
 	img.convertTo(floatImg, CV_32F);
 	cv::log(floatImg, log);
 	log.convertTo(uCharImg, CV_8UC3);
-	cv::exp(log, expImage);
-	expImage.convertTo(uCharImg, CV_8UC3);
+	
+	/*
+	* here we can see that img -> log -> exp: img
+	* we get back the initial image
+	* 
+	* cv::exp(log, expImage);
+	* expImage.convertTo(uCharImg, CV_8UC3);
+	*/
 
 	cv::imshow("In", img);
-	cv::imshow("Log", uCharImg);	// here we can see that img -> log -> exp: img
-									// we get back the initial image
+	cv::imshow("Log", uCharImg);
 
 	cv::waitKey(0);
 }
