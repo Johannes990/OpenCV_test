@@ -8,7 +8,22 @@ void run_psnr() {
 	cv::Mat img2Gray = cv::imread("C:\\Users\\johan\\OneDrive\\Pictures\\top.jpg", cv::IMREAD_GRAYSCALE);
 	cv::Mat img3 = cv::imread("C:\\Users\\johan\\OneDrive\\Pictures\\moll.png", cv::IMREAD_COLOR);
 	cv::Mat img1NOT, img3Rotated;
+	cv::Mat small1 = (cv::Mat_<uchar>(2, 2) << 10, 5, 1, 0);
+	cv::Mat small2 = (cv::Mat_<uchar>(2, 2) << 10, 3, 1, 0);
 	const double R = 255;
+
+	/*
+	* PSNR formula:
+	* PSNR = 10 * log_10 (R^2 / MSE)
+	* MSE - mean squared error between the arrays
+	* 
+	*/
+
+	std::cout << "The peak signal to noise ratio between arrays:" << std::endl;
+	std::cout << small1 << std::endl;
+	std::cout << "and" << std::endl;
+	std::cout << small2 << std::endl;
+	std::cout << "is: " << cv::PSNR(small1, small2, R) << " dB." << std::endl;
 
 	cv::namedWindow("Im1", cv::WINDOW_NORMAL);
 	cv::namedWindow("Im1 not", cv::WINDOW_NORMAL);
