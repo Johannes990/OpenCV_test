@@ -6,7 +6,7 @@ void run_repeat() {
 	cv::Mat img = cv::imread("C:\\Users\\johan\\OneDrive\\Pictures\\tile.png", cv::IMREAD_COLOR);
 	cv::Mat out;
 	const int nX = 200;
-	const int nY = 150;
+	const int nY = 200;
 
 	cv::namedWindow("In", cv::WINDOW_KEEPRATIO);
 	cv::namedWindow("Out", cv::WINDOW_KEEPRATIO);
