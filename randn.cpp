@@ -3,6 +3,9 @@
 
 
 void run_randn() {
+	// seed the random number generator
+	cv::theRNG().state = time(NULL);
+
 	cv::Mat arraySingleChannel = cv::Mat::zeros(50, 50, CV_8U);
 	cv::Mat arrayTripleChannel = cv::Mat::zeros(50, 50, CV_8UC3);
 	const double singleMean = 91.564;
