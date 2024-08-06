@@ -121,3 +121,5 @@ void run_eigen();					// calculate eingevalues and eigenvectors
 void run_bitwise_ops();				// bitwise operations in opencv
 void run_shi_thomasi();				// Shi-Thomasi type corner detector
 void run_check_range();				// check every element of an array for invalid values
+void run_log();						// calculate natural logarithm of every array element
+
