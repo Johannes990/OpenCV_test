@@ -157,7 +157,8 @@ int main(int argc, char *argv[])
     //run_check_range();
     //run_log();
     //run_psnr();
-    run_normalize();
+    //run_normalize();
+    run_randn();
 
     return 0;
 }

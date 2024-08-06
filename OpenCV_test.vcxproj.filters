@@ -327,6 +327,9 @@
     <ClCompile Include="normalize.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="randn.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="opencv_test.h">
