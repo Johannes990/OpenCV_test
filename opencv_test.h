@@ -123,4 +123,5 @@ void run_shi_thomasi();				// Shi-Thomasi type corner detector
 void run_check_range();				// check every element of an array for invalid values
 void run_log();						// calculate natural logarithm of every array element
 void run_psnr();					// peak signal-to-noise ratio calculation
+void run_normalize();				// normalize the norm or value range of an array
 

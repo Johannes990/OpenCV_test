@@ -156,7 +156,8 @@ int main(int argc, char *argv[])
     //run_shi_thomasi();
     //run_check_range();
     //run_log();
-    run_psnr();
+    //run_psnr();
+    run_normalize();
 
     return 0;
 }

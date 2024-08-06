@@ -224,6 +224,7 @@ xcopy /y /d "C:\Users\johan\opencv\build\x64\vc16\bin\opencv_world4100.dll" "$(O
     <ClCompile Include="move_window.cpp" />
     <ClCompile Include="multiply.cpp" />
     <ClCompile Include="named_window.cpp" />
+    <ClCompile Include="normalize.cpp" />
     <ClCompile Include="OpenCV_test.cpp" />
     <ClCompile Include="point_polygon_test.cpp" />
     <ClCompile Include="polar_transformations.cpp" />
