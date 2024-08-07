@@ -160,7 +160,8 @@ int main(int argc, char *argv[])
     //run_normalize();
     //run_randn();
     //run_repeat();
-    run_sort();
+    //run_sort();
+    run_solve();
 
     return 0;
 }

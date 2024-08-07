@@ -242,6 +242,7 @@ xcopy /y /d "C:\Users\johan\opencv\build\x64\vc16\bin\opencv_world4100.dll" "$(O
     <ClCompile Include="select_roi.cpp" />
     <ClCompile Include="set_mouse_callback.cpp" />
     <ClCompile Include="sobel_filter.cpp" />
+    <ClCompile Include="solve.cpp" />
     <ClCompile Include="sort.cpp" />
     <ClCompile Include="threshold.cpp" />
     <ClCompile Include="transpose.cpp" />

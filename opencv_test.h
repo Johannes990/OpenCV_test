@@ -127,5 +127,7 @@ void run_normalize();				// normalize the norm or value range of an array, examp
 void run_randn();					// fill array with noramlly distributed random numbers
 void run_repeat();					// function to fill the output array with repeated copies of input array
 void run_sort();					// sort each row or each column of a matrix
+void run_solve();					// solve() solves a linear system of equations, solveCubic() finds the real roots 
+									// of a cubic equation 
 
 
