@@ -11,6 +11,9 @@ void run_sort() {
 	cv::namedWindow("Rows sorted", cv::WINDOW_NORMAL);
 	cv::namedWindow("Cols sorted", cv::WINDOW_NORMAL);
 
+	cv::sort(img, imgSortedByRows, cv::SORT_EVERY_ROW + cv::SORT_ASCENDING);
+	cv::sort(img, imgSortedByCols, cv::SORT_EVERY_COLUMN);
+
 	cv::imshow("In", img);
 	cv::imshow("Rows sorted", imgSortedByRows);
 	cv::imshow("Cols sorted", imgSortedByCols);
