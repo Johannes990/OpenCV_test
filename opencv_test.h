@@ -129,5 +129,6 @@ void run_repeat();					// function to fill the output array with repeated copies
 void run_sort();					// sort each row or each column of a matrix
 void run_solve();					// solve() solves a linear system of equations, solveCubic() finds the real roots 
 									// of a cubic equation 
+void run_dct();						// calculate the discrete cosine transform of an even-size array
 
 

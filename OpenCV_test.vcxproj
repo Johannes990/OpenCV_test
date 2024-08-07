@@ -178,6 +178,7 @@ xcopy /y /d "C:\Users\johan\opencv\build\x64\vc16\bin\opencv_world4100.dll" "$(O
     <ClCompile Include="cvt_color.cpp" />
     <ClCompile Include="cvt_color_two_plane.cpp" />
     <ClCompile Include="data_types.cpp" />
+    <ClCompile Include="dct.cpp" />
     <ClCompile Include="demosaicing.cpp" />
     <ClCompile Include="destroy_window.cpp" />
     <ClCompile Include="determinant.cpp" />
