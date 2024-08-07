@@ -159,7 +159,8 @@ int main(int argc, char *argv[])
     //run_psnr();
     //run_normalize();
     //run_randn();
-    run_repeat();
+    //run_repeat();
+    run_sort();
 
     return 0;
 }

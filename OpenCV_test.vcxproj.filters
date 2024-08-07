@@ -333,6 +333,9 @@
     <ClCompile Include="repeat.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="sort.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="opencv_test.h">
