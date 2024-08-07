@@ -10,5 +10,5 @@ void run_solve() {
 	cv::solve(coeffs, freeParams, solution, cv::DECOMP_LU);
 
 	std::cout << "Solution to our equation system:" << std::endl;
-	std::cout << solution << std::endl;
+	std::cout << solution << std::endl; // will be [0.5, 4, 0.(3)]
 }
