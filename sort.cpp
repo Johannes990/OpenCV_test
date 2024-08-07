@@ -13,7 +13,7 @@ void run_sort() {
 
 	// is sort single channel - yes!
 	cv::sort(img, imgSortedByRows, cv::SORT_EVERY_ROW + cv::SORT_ASCENDING);
-	cv::sort(img, imgSortedByCols, cv::SORT_EVERY_COLUMN);
+	cv::sort(img, imgSortedByCols, cv::SORT_EVERY_COLUMN + cv::SORT_DESCENDING);
 
 	cv::imshow("In", img);
 	cv::imshow("Rows sorted", imgSortedByRows);
