@@ -163,7 +163,8 @@ int main(int argc, char *argv[])
     //run_sort();
     //run_solve();
     //run_dct();
-    run_dft();
+    //run_dft();
+    run_magnitude();
 
     return 0;
 }

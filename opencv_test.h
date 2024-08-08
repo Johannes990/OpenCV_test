@@ -131,5 +131,6 @@ void run_solve();					// solve() solves a linear system of equations, solveCubic
 									// of a cubic equation 
 void run_dct();						// calculate the discrete cosine transform of an even-size array
 void run_dft();						// calculate the discrete Fourier transform of a 1D or 2D floating-point array
+void run_magnitude();				// calculate the magnitude of two 2D arrays
 
 

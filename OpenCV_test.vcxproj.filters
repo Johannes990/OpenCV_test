@@ -345,6 +345,9 @@
     <ClCompile Include="dft.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="magnitude.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="opencv_test.h">
