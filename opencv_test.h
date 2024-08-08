@@ -130,5 +130,6 @@ void run_sort();					// sort each row or each column of a matrix
 void run_solve();					// solve() solves a linear system of equations, solveCubic() finds the real roots 
 									// of a cubic equation 
 void run_dct();						// calculate the discrete cosine transform of an even-size array
+void run_dft();						// calculate the discrete Fourier transform of a 1D or 2D floating-point array
 
 

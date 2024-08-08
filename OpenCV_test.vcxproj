@@ -182,6 +182,7 @@ xcopy /y /d "C:\Users\johan\opencv\build\x64\vc16\bin\opencv_world4100.dll" "$(O
     <ClCompile Include="demosaicing.cpp" />
     <ClCompile Include="destroy_window.cpp" />
     <ClCompile Include="determinant.cpp" />
+    <ClCompile Include="dft.cpp" />
     <ClCompile Include="distance_transform.cpp" />
     <ClCompile Include="divide.cpp" />
     <ClCompile Include="drawing_image_contours.cpp" />

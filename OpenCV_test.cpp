@@ -162,7 +162,8 @@ int main(int argc, char *argv[])
     //run_repeat();
     //run_sort();
     //run_solve();
-    run_dct();
+    //run_dct();
+    run_dft();
 
     return 0;
 }
