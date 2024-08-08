@@ -46,9 +46,11 @@ void run_magnitude() {
 	cv::namedWindow("Out", cv::WINDOW_NORMAL);
 
 	img.convertTo(imgFloat, CV_32F);
-	cv::randn(randImg, 10, 5);
+	cv::randn(randImg, 100, 30);
 	randImg.convertTo(randImgFloat, CV_32F);
-	cv::magnitude(imgFloat, randImgFloat, magnitude);
+	cv::magnitude(imgFloat, randImgFloat, magnitude);	// noise on the randImgFloat input
+														// gets converted into noise on the output
+	magnitude.convertTo(magnitude, CV_8U);
 
 
 	cv::imshow("In1", img);
