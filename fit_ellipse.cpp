@@ -18,8 +18,9 @@ void run_fit_ellipse() {
 
 	for (int i = 0; i < contours.size(); i++) {
 		if (contours[i].size() >= 5) {
-			cv::RotatedRect r = cv::fitEllipse(contours[i]);// fitEllipse approximates the shape only
-															// it does not necessarily give ellipses that contain the contour absolutely
+			cv::RotatedRect r = cv::fitEllipseAMS(contours[i]);	// fitEllipse approximates the shape only
+																// it does not necessarily give ellipses that contain the contour absolutely
+																// good to use if we have a part of an ellipse and want to get the entire shape
 			cv::ellipse(out, r, ellipseColor, 1, cv::LINE_AA);
 
 		}
