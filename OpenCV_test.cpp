@@ -77,7 +77,7 @@ int main(int argc, char *argv[])
     //run_distance_transform();
     //run_blend_linear();
     //run_grab_cut();
-    //run_watershed();
+    run_watershed();
     //run_flood_fill();
     //run_cvt_color();
     //run_cvt_color_two_plane();
@@ -164,7 +164,7 @@ int main(int argc, char *argv[])
     //run_solve();
     //run_dct();
     //run_dft();
-    run_magnitude();
+    //run_magnitude();
 
     return 0;
 }

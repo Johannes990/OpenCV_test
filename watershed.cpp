@@ -51,7 +51,7 @@ static void onMouse(int event, int x, int y, int flags, void*)
 
 void run_watershed()
 {
-	string filename = "C:\\Users\\johan\\OneDrive\\Pictures\\trashcan.jpg"; // show my own file
+	string filename = "C:\\Users\\johan\\OneDrive\\Pictures\\linnapilt.jpg"; // show my own file
 	Mat img0 = imread(filename, IMREAD_COLOR), imgGray;
 
 	if (img0.empty())
