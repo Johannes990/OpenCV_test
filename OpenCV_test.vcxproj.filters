@@ -348,6 +348,9 @@
     <ClCompile Include="magnitude.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="fit_ellipse.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="opencv_test.h">

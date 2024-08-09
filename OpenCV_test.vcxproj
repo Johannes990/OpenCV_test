@@ -195,6 +195,7 @@ xcopy /y /d "C:\Users\johan\opencv\build\x64\vc16\bin\opencv_world4100.dll" "$(O
     <ClCompile Include="extract_channel.cpp" />
     <ClCompile Include="find_contours.cpp" />
     <ClCompile Include="find_non_zero.cpp" />
+    <ClCompile Include="fit_ellipse.cpp" />
     <ClCompile Include="fit_line.cpp" />
     <ClCompile Include="flip.cpp" />
     <ClCompile Include="flood_fill.cpp" />
