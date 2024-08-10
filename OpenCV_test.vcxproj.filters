@@ -351,6 +351,9 @@
     <ClCompile Include="fit_ellipse.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="_test_watershed_corners.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="opencv_test.h">

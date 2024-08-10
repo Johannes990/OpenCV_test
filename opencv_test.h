@@ -133,4 +133,6 @@ void run_dct();						// calculate the discrete cosine transform of an even-size 
 void run_dft();						// calculate the discrete Fourier transform of a 1D or 2D floating-point array
 void run_magnitude();				// calculate the magnitude of two 2D arrays
 void run_fit_ellipse();				// fit ellipse function
+void run_watershed_corners();		//// testing to see if watershed can be a good way to get corners
+
 

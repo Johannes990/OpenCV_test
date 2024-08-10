@@ -165,7 +165,8 @@ int main(int argc, char *argv[])
     //run_dct();
     //run_dft();
     //run_magnitude();
-    run_fit_ellipse();
+    //run_fit_ellipse();
+    run_watershed_corners();
 
     return 0;
 }
