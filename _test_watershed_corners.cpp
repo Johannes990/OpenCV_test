@@ -30,12 +30,16 @@ static void onMouse(int event, int x, int y, int flags,	void*)
 
 void run_watershed_corners() {
 	std::string filename = "C:\\Users\\johan\\OneDrive\\Pictures\\pildid\\10_08_2024\\IMG_20240806_142444.jpg";
-	cv::Mat img0 = cv::imread(filename, cv::IMREAD_COLOR), imgGray;
+	cv::Mat img00 = cv::imread(filename, cv::IMREAD_COLOR), imgGray;
 
-	if (img0.empty())
+	if (img00.empty())
 	{
 		std::cout << "Couldn't open image ";
 	}
+
+	cv::Mat img0;
+	cv::resize(img00, img0, cv::Size(), 0.5, 0.5);
+	std::cout << "resized img size: " << img0.cols << " by " << img0.rows << std::endl;
 	
 	img0.copyTo(mouseAreaImg);
 	cvtColor(mouseAreaImg, markersMask, cv::COLOR_BGR2GRAY);
@@ -65,7 +69,7 @@ void run_watershed_corners() {
 		if (c == 'w' || c == ' ')
 		{
 			int i, j, compCount = 0;
-			std::vector<std::vector<cv::Point> > contours;
+			std::vector<std::vector<cv::Point>> contours;
 			std::vector<cv::Vec4i> hierarchy;
 			findContours(markersMask, contours, hierarchy, cv::RETR_CCOMP, cv::CHAIN_APPROX_SIMPLE);
 
