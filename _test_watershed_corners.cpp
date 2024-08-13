@@ -29,8 +29,11 @@ static void onMouse(int event, int x, int y, int flags,	void*)
 }
 
 void run_watershed_corners() {
-	std::string filename = "C:\\Users\\johan\\OneDrive\\Pictures\\pildid\\10_08_2024\\IMG_20240806_142444.jpg";
+	const std::string filename = "C:\\Users\\johan\\OneDrive\\Pictures\\pildid\\10_08_2024\\IMG_20240806_142444.jpg";
 	cv::Mat img00 = cv::imread(filename, cv::IMREAD_COLOR), imgGray;
+	const float scaleDownFactor = 3.0;
+	double dx = 1.0 / scaleDownFactor;
+	double dy = 1.0 / scaleDownFactor;
 
 	if (img00.empty())
 	{
@@ -38,7 +41,7 @@ void run_watershed_corners() {
 	}
 
 	cv::Mat img0;
-	cv::resize(img00, img0, cv::Size(), 0.5, 0.5);
+	cv::resize(img00, img0, cv::Size(), dx, dy);
 	std::cout << "resized img size: " << img0.cols << " by " << img0.rows << std::endl;
 	
 	img0.copyTo(mouseAreaImg);

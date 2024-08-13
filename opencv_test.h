@@ -134,5 +134,6 @@ void run_dft();						// calculate the discrete Fourier transform of a 1D or 2D f
 void run_magnitude();				// calculate the magnitude of two 2D arrays
 void run_fit_ellipse();				// fit ellipse function
 void run_watershed_corners();		//// testing to see if watershed can be a good way to get corners
+void run_phase();					// function to calculate the rotation angle of 2D vectors
 
 
