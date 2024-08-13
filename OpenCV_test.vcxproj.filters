@@ -357,6 +357,9 @@
     <ClCompile Include="phase.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="calc_covar_matrix.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="opencv_test.h">

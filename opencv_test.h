@@ -135,5 +135,7 @@ void run_magnitude();				// calculate the magnitude of two 2D arrays
 void run_fit_ellipse();				// fit ellipse function
 void run_watershed_corners();		//// testing to see if watershed can be a good way to get corners
 void run_phase();					// function to calculate the rotation angle of 2D vectors
+void run_calc_covariation_matrix();	// calculate the covariation matrix and, optionally, the mean vector of the set of
+									// input vectors
 
 

@@ -167,7 +167,8 @@ int main(int argc, char *argv[])
     //run_magnitude();
     //run_fit_ellipse();
     //run_watershed_corners();
-    run_phase();
+    //run_phase();
+    run_calc_covariation_matrix();
 
     return 0;
 }
