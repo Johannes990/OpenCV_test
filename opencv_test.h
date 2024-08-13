@@ -137,5 +137,4 @@ void run_watershed_corners();		//// testing to see if watershed can be a good wa
 void run_phase();					// function to calculate the rotation angle of 2D vectors
 void run_calc_covariation_matrix();	// calculate the covariation matrix and, optionally, the mean vector of the set of
 									// input vectors
-
-
+void run_mahalanobis();				// calculate the mahalanobis distance between two 1D vectors
