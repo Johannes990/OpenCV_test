@@ -8,14 +8,14 @@ void run_mahalanobis() {
 	const int xSize = 500;
 	const int ySize = 500;
 	cv::Mat input = cv::Mat::zeros(xSize, ySize, CV_8UC3);
-	const std::vector<cv::Point> pointsGroup1 = {cv::Point(86, 5), cv::Point(112, 270),
-										   cv::Point(370, 109), cv::Point(37, 380),
-										   cv::Point(200, 100), cv::Point(12, 400),
-										   cv::Point(400, 200), cv::Point(400, 400)};
-	const std::vector<cv::Point> pointsGroup2 = {cv::Point(42, 376), cv::Point(495, 54),
-										   cv::Point(345, 53), cv::Point(58, 480),
-										   cv::Point(132, 183), cv::Point(107, 86),
-										   cv::Point(100, 175), cv::Point(80, 31)};
+	const std::vector<cv::Point> pointsGroup1 = {cv::Point(86, 150), cv::Point(112, 270),
+										   cv::Point(117, 109), cv::Point(37, 271),
+										   cv::Point(76, 100), cv::Point(12, 194),
+										   cv::Point(400, 200), cv::Point(190, 40)};
+	const std::vector<cv::Point> pointsGroup2 = {cv::Point(260, 376), cv::Point(495, 280),
+										   cv::Point(345, 353), cv::Point(189, 380),
+										   cv::Point(232, 283), cv::Point(197, 386),
+										   cv::Point(200, 175), cv::Point(280, 31)};
 	const cv::Scalar point1Color = cv::Scalar(25, 190, 190);
 	const cv::Scalar point2Color = cv::Scalar(230, 0, 76);
 	const int radius = 4;
