@@ -7,7 +7,7 @@ void run_perspective_transform() {
 	std::vector<cv::Point3f> outputMatrix;
 	std::vector<cv::Point2f> imgPoints;
 	std::vector<cv::Point2f> imgTransformPoints;
-	cv::Mat img = cv::Mat::zeros(500, 500, CV_8UC3);
+	cv::Mat img = cv::Mat::zeros(800, 800, CV_8UC3);
 	const cv::Scalar imgPointColor = cv::Scalar(0, 255, 0);
 	const cv::Scalar transformPointColor = cv::Scalar(255, 0, 255);
 	const int radius = 4;
@@ -31,8 +31,8 @@ void run_perspective_transform() {
 														  1.5, 0.5, 1.5, 1.0,
 														  0.5, 1.0, 1.0, 0.5,
 														  1.0, 1.0, 3.5, 2.5);
-	cv::Mat imgTransformMat = (cv::Mat_<float>(3, 3) << 0, 1, 0,
-														1, 0, 0,
+	cv::Mat imgTransformMat = (cv::Mat_<float>(3, 3) << 0.4, 1, 0,
+														0.5, 0.75, 0,
 														0, 0, 1);
 
 
