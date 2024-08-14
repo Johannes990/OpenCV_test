@@ -138,3 +138,5 @@ void run_phase();					// function to calculate the rotation angle of 2D vectors
 void run_calc_covariation_matrix();	// calculate the covariation matrix and, optionally, the mean vector of the set of
 									// input vectors
 void run_mahalanobis();				// calculate the mahalanobis distance between two 1D vectors
+void run_reduce();					// reduction of matrices to vectors by applying given method
+									// either sum, average, max or min

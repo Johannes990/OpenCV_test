@@ -169,7 +169,8 @@ int main(int argc, char *argv[])
     //run_watershed_corners();
     //run_phase();
     //run_calc_covariation_matrix();
-    run_mahalanobis();
+    //run_mahalanobis();
+    run_reduce();
 
     return 0;
 }
