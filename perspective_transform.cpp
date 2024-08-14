@@ -31,8 +31,8 @@ void run_perspective_transform() {
 														  1.5, 0.5, 1.5, 1.0,
 														  0.5, 1.0, 1.0, 0.5,
 														  1.0, 1.0, 3.5, 2.5);
-	cv::Mat imgTransformMat = (cv::Mat_<float>(3, 3) << 0.4, 1, 0,
-														0.5, 0.75, 0,
+	cv::Mat imgTransformMat = (cv::Mat_<float>(3, 3) << 0.4, 0, 0,
+														0, 0.75, 0,
 														0, 0, 1);
 
 
@@ -48,7 +48,9 @@ void run_perspective_transform() {
 	std::cout << outputMatrix << std::endl;
 
 	for (int i = 0; i < imgPoints.size(); i++) {
+		// initial points are green filled
 		cv::circle(img, imgPoints[i], radius, imgPointColor, cv::FILLED);
+		// transformed points are purple non-filled
 		cv::circle(img, imgTransformPoints[i], radius, transformPointColor);
 	}
 
