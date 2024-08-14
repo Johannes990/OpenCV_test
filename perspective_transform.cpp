@@ -4,6 +4,8 @@
 
 void run_perspective_transform() {
 	std::vector<cv::Point3f> inputMatrix;
+	std::vector<cv::Point3f> outputMatrix;
+
 	inputMatrix.push_back(cv::Point3f(25, 35, 45));
 	inputMatrix.push_back(cv::Point3f(35, 34, 45));
 	inputMatrix.push_back(cv::Point3f(45, 33, 45));
@@ -13,7 +15,7 @@ void run_perspective_transform() {
 	inputMatrix.push_back(cv::Point3f(85, 29, 45));
 	inputMatrix.push_back(cv::Point3f(95, 28, 45));
 	inputMatrix.push_back(cv::Point3f(105, 27, 45));
-	std::vector<cv::Point3f> outputMatrix;
+	
 	cv::Mat transformMatrix = (cv::Mat_<float>(4, 4) << 1.0, 1.0, 1.0, 1.0,
 														  1.5, 0.5, 1.5, 1.0,
 														  0.5, 1.0, 1.0, 0.5,
