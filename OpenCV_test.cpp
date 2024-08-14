@@ -170,7 +170,8 @@ int main(int argc, char *argv[])
     //run_phase();
     //run_calc_covariation_matrix();
     //run_mahalanobis();
-    run_reduce();
+    //run_reduce();
+    run_perspective_transform();
 
     return 0;
 }

@@ -140,3 +140,5 @@ void run_calc_covariation_matrix();	// calculate the covariation matrix and, opt
 void run_mahalanobis();				// calculate the mahalanobis distance between two 1D vectors
 void run_reduce();					// reduction of matrices to vectors by applying given method
 									// either sum, average, max or min
+void run_perspective_transform();	// this function performs a perspective matrix transformation of vectors
+									// input must be a 2-channel or 3-channel float type array, output must match types
