@@ -369,6 +369,9 @@
     <ClCompile Include="perspective_transform.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="svd_decomposition.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="opencv_test.h">

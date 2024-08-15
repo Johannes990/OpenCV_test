@@ -253,6 +253,7 @@ xcopy /y /d "C:\Users\johan\opencv\build\x64\vc16\bin\opencv_world4100.dll" "$(O
     <ClCompile Include="sobel_filter.cpp" />
     <ClCompile Include="solve.cpp" />
     <ClCompile Include="sort.cpp" />
+    <ClCompile Include="svd_decomposition.cpp" />
     <ClCompile Include="threshold.cpp" />
     <ClCompile Include="transpose.cpp" />
     <ClCompile Include="warp_persepective.cpp" />
