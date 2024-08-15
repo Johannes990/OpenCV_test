@@ -143,3 +143,4 @@ void run_reduce();					// reduction of matrices to vectors by applying given met
 void run_perspective_transform();	// this function performs a perspective matrix transformation of vectors
 									// input must be a 2-channel or 3-channel float type array, output must match types
 void run_svd_decomposition();		// singular value decomposition with a matrix in OpenCV
+void run_mix_channels();			// copy specified channel from an input array to specified channel in an output array

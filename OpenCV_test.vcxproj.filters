@@ -372,6 +372,9 @@
     <ClCompile Include="svd_decomposition.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="mix_channels.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="opencv_test.h">

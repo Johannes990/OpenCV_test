@@ -172,7 +172,8 @@ int main(int argc, char *argv[])
     //run_mahalanobis();
     //run_reduce();
     //run_perspective_transform();
-    run_svd_decomposition();
+    //run_svd_decomposition();
+    run_mix_channels();
 
     return 0;
 }
