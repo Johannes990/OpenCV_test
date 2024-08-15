@@ -173,7 +173,8 @@ int main(int argc, char *argv[])
     //run_reduce();
     //run_perspective_transform();
     //run_svd_decomposition();
-    run_mix_channels();
+    //run_mix_channels();
+    run_get_cuda_device_count();
 
     return 0;
 }

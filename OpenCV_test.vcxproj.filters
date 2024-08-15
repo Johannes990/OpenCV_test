@@ -375,6 +375,9 @@
     <ClCompile Include="mix_channels.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="get_cuda_device_count.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="opencv_test.h">
