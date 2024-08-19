@@ -146,3 +146,4 @@ void run_svd_decomposition();		// singular value decomposition with a matrix in 
 void run_mix_channels();			// copy specified channel from an input array to specified channel in an output array
 void run_get_cuda_device_count();	// return the number of installed cuda devices
 void run_kmeans();					// finds centers of clusters and groups input samples around the clusters
+void run_partition();				// split an elemednt into equivalency classes

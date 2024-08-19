@@ -175,7 +175,8 @@ int main(int argc, char *argv[])
     //run_svd_decomposition();
     //run_mix_channels();
     //run_get_cuda_device_count();
-    run_kmeans();
+    //run_kmeans();
+    run_partition();
 
     return 0;
 }
