@@ -7,11 +7,12 @@ void run_imreadmulti() {
 	std::string windowName = "page number 0";
 	const std::string filename = "C:\\Users\\johan\\OneDrive\\Pictures\\pildid\\multipage_tif_example.tif";
 
-	bool isValid = cv::imreadmulti(filename, images);
-
-	std::cout << "read " << images.size() << " images" << std::endl;
-	std::cout << "Validity: " << isValid << std::endl;
-
+	// this checks to see if the provided string actually points to an openable image
+	// to prevent crashing with wrong input
+	if (cv::haveImageReader(filename)) {
+		cv::imreadmulti(filename, images);
+	}
+	
 	cv::namedWindow(windowName, cv::WINDOW_NORMAL);
 
 	for (int i = 0; i < images.size(); i++) {
