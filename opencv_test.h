@@ -147,3 +147,4 @@ void run_mix_channels();			// copy specified channel from an input array to spec
 void run_get_cuda_device_count();	// return the number of installed cuda devices
 void run_kmeans();					// finds centers of clusters and groups input samples around the clusters
 void run_partition();				// split an elemednt into equivalency classes
+void run_imreadmulti();				// loads a multi page image from a file
