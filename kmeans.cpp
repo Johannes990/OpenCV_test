@@ -24,6 +24,7 @@ void run_kmeans() {
 	// visualize kmeans output
 	cv::Mat img(screenX, screenY, CV_8UC3, cv::Scalar::all(255));
 
+	// data points
 	for (int i = 0; i < dataSize; i++) {
 		int clusterId = labels.at<int>(i);
 		cv::Point dataPoint(data.at<float>(i, 0) * screenX, data.at<float>(i, 1) * screenY);
@@ -35,7 +36,12 @@ void run_kmeans() {
 		} else if (clusterId == 2) {
 			cv::circle(img, dataPoint, pointRadius, thirdColor, cv::FILLED);
 		}
+	}
 
+	// cluster centers
+	for (int i = 0; i < centers.rows; i++) {
+		cv::Point centerPoint(centers.at<float>(i, 0) * screenX, centers.at<float>(i, 1) * screenY);
+		cv::circle(img, centerPoint, pointRadius + 2, cv::Scalar(0, 0, 0), cv::FILLED);
 	}
 
 	cv::imshow("output", img);
