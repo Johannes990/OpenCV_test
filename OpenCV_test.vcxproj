@@ -213,6 +213,7 @@ xcopy /y /d "C:\Users\johan\opencv\build\x64\vc16\bin\opencv_world4100.dll" "$(O
     <ClCompile Include="intersection_convex_convex.cpp" />
     <ClCompile Include="invert.cpp" />
     <ClCompile Include="in_range.cpp" />
+    <ClCompile Include="kmeans.cpp" />
     <ClCompile Include="laplacian.cpp" />
     <ClCompile Include="log.cpp" />
     <ClCompile Include="magnitude.cpp" />

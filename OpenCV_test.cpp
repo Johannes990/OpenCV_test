@@ -174,7 +174,8 @@ int main(int argc, char *argv[])
     //run_perspective_transform();
     //run_svd_decomposition();
     //run_mix_channels();
-    run_get_cuda_device_count();
+    //run_get_cuda_device_count();
+    run_kmeans();
 
     return 0;
 }
