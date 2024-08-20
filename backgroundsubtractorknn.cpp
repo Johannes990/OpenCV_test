@@ -6,7 +6,7 @@ void run_backgroundsubtractorknn() {
 	cv::VideoCapture video = cv::VideoCapture("C:\\Users\\johan\\Videos\\VID_20240709_224705.mp4");
 	cv::Mat frame;
 	// create knn subtractor with default params
-	cv::Ptr<cv::BackgroundSubtractorKNN> knn = cv::createBackgroundSubtractorKNN(500, 400, true);
+	cv::Ptr<cv::BackgroundSubtractorKNN> knn = cv::createBackgroundSubtractorKNN(500, 500, false);
 
 	cv::namedWindow("Input", cv::WINDOW_NORMAL);
 	cv::namedWindow("Output", cv::WINDOW_NORMAL);
