@@ -387,6 +387,9 @@
     <ClCompile Include="imreadmulti.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="imdecode_imencode.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="opencv_test.h">

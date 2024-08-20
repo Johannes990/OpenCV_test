@@ -177,7 +177,8 @@ int main(int argc, char *argv[])
     //run_get_cuda_device_count();
     //run_kmeans();
     //run_partition();
-    run_imreadmulti();
+    //run_imreadmulti();
+    run_imdecode_imencode();
 
     return 0;
 }
