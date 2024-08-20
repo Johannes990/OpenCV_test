@@ -152,6 +152,7 @@ xcopy /y /d "C:\Users\johan\opencv\build\x64\vc16\bin\opencv_world4100.dll" "$(O
     <ClCompile Include="apply_color_map.cpp" />
     <ClCompile Include="approx_poly_dp.cpp" />
     <ClCompile Include="arc_length.cpp" />
+    <ClCompile Include="backgroundsubtractorknn.cpp" />
     <ClCompile Include="bitwise_ops.cpp" />
     <ClCompile Include="blend_linear.cpp" />
     <ClCompile Include="blur_methods.cpp" />

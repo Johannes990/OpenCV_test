@@ -178,7 +178,8 @@ int main(int argc, char *argv[])
     //run_kmeans();
     //run_partition();
     //run_imreadmulti();
-    run_imdecode_imencode();
+    //run_imdecode_imencode();
+    run_backgroundsubtractorknn();
 
     return 0;
 }

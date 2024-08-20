@@ -390,6 +390,9 @@
     <ClCompile Include="imdecode_imencode.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="backgroundsubtractorknn.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="opencv_test.h">
