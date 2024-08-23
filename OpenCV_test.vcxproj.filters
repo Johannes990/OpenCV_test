@@ -396,6 +396,9 @@
     <ClCompile Include="create_background_subtractor_mog2.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="dense_optical_flow_calc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="opencv_test.h">

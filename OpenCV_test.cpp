@@ -180,7 +180,8 @@ int main(int argc, char *argv[])
     //run_imreadmulti();
     //run_imdecode_imencode();
     //run_backgroundsubtractorknn();
-    run_createBackgroundSubtractorMOG2();
+    //run_createBackgroundSubtractorMOG2();
+    run_dense_optical_flow_calc();
 
     return 0;
 }

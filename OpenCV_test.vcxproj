@@ -183,6 +183,7 @@ xcopy /y /d "C:\Users\johan\opencv\build\x64\vc16\bin\opencv_world4100.dll" "$(O
     <ClCompile Include="data_types.cpp" />
     <ClCompile Include="dct.cpp" />
     <ClCompile Include="demosaicing.cpp" />
+    <ClCompile Include="dense_optical_flow_calc.cpp" />
     <ClCompile Include="destroy_window.cpp" />
     <ClCompile Include="determinant.cpp" />
     <ClCompile Include="dft.cpp" />

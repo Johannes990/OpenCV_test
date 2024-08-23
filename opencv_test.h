@@ -152,4 +152,5 @@ void run_imdecode_imencode();		// imencode() encodes a suitable image into a mem
 									// imdecode reads an image from a memory buffer
 void run_backgroundsubtractorknn();	// knn-based Background / Foreground segmentation analysis
 void run_createBackgroundSubtractorMOG2();	// create MOG2 background subtractor. MOG uses Gaussian algorithm
+void run_dense_optical_flow_calc();	// calculation of optical flow
 
