@@ -151,4 +151,5 @@ void run_imreadmulti();				// loads a multi page image from a file
 void run_imdecode_imencode();		// imencode() encodes a suitable image into a memory buffer
 									// imdecode reads an image from a memory buffer
 void run_backgroundsubtractorknn();	// knn-based Background / Foreground segmentation analysis
-void run_createBackgroundSubtractorMOG2();	// create MOG2 background subtractor...
+void run_createBackgroundSubtractorMOG2();	// create MOG2 background subtractor. MOG uses Gaussian algorithm
+
