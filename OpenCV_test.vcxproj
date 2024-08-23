@@ -176,6 +176,7 @@ xcopy /y /d "C:\Users\johan\opencv\build\x64\vc16\bin\opencv_world4100.dll" "$(O
     <ClCompile Include="corner_harris.cpp" />
     <ClCompile Include="corner_eigen_val_vect.cpp" />
     <ClCompile Include="count_non_zero.cpp" />
+    <ClCompile Include="create_background_subtractor_mog2.cpp" />
     <ClCompile Include="create_trackbar.cpp" />
     <ClCompile Include="cvt_color.cpp" />
     <ClCompile Include="cvt_color_two_plane.cpp" />
